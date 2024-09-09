@@ -10,33 +10,49 @@ function createFooter() {
     const row = document.createElement('div');
     row.className = 'row';
 
+    // Left Column
     const colLeft = document.createElement('div');
     colLeft.className = 'col-md-6 text-start';
     colLeft.innerHTML = `
         新竹市東區培英國中<br>
-        30068 新竹市學府路4號 No. 4, Xuefu Rd., East Dist., Hsinchu City , Taiwan (R.O.C.)<br>
+        30068 新竹市學府路4號 No. 4, Xuefu Rd., East Dist., Hsinchu City, Taiwan (R.O.C.)<br>
         電話 03-5721301 傳真 03-5726578<br>
     `;
 
+    // Right Column
     const colRight = document.createElement('div');
     colRight.className = 'col-md-6 text-end';
     colRight.innerHTML = `
-        <div style="display: inline-flex; gap: 10px;">
+        <div style="display: inline-flex; gap: 10px; align-items: center;">
             <a href="mailto:pijh06@hc.edu.tw">
                 <img src="icon/email.png" alt="Email Icon" style="width: 24px; height: auto;">
             </a>
-            <img src="icon/line.png" alt="Line Icon" style="width: 24px; height: auto;">
-            <img src="icon/facebook.png" alt="Facebook Icon" style="width: 24px; height: auto;">
+            <a href="#">
+                <img src="icon/line.png" alt="Line Icon" style="width: 24px; height: auto;">
+            </a>
+            <a href="#">
+                <img src="icon/facebook.png" alt="Facebook Icon" style="width: 24px; height: auto;">
+            </a>
+            <a href="https://www.pijh.hc.edu.tw/nss/p/index">
+                <img src="icon/link.png" alt="培英國中" style="width: 26px; height: auto;">
+                新竹市立培英國中-首頁
+            </a>
         </div><br>
         建議最佳瀏覽環境: Chrome 62 以上版本、Firefox 56 以上版本、Microsoft Edge<br>
         Design by LO WEI JHIH
     `;
 
+    // Appending columns to row
     row.appendChild(colLeft);
     row.appendChild(colRight);
+
+    // Appending row to container
     footerContainer.appendChild(row);
+
+    // Appending container to footer
     footer.appendChild(footerContainer);
 
+    // Appending footer to body
     document.body.appendChild(footer);
 }
 
