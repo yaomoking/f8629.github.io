@@ -24,16 +24,16 @@ function createFooter() {
     colRight.className = 'col-md-6 text-end';
     colRight.innerHTML = `
         <div style="display: inline-flex; gap: 10px; align-items: center;">
-            <a href="mailto:pijh06@hc.edu.tw">
+            <a href="mailto:pijh06@hc.edu.tw" class="footer-link">
                 <img src="icon/email.png" alt="Email Icon" style="width: 24px; height: auto;">
             </a>
-            <a href="#">
+            <a href="#" class="footer-link">
                 <img src="icon/line.png" alt="Line Icon" style="width: 24px; height: auto;">
             </a>
-            <a href="#">
+            <a href="#" class="footer-link">
                 <img src="icon/facebook.png" alt="Facebook Icon" style="width: 24px; height: auto;">
             </a>
-            <a href="https://www.pijh.hc.edu.tw/nss/p/index">
+            <a href="https://www.pijh.hc.edu.tw/nss/p/index" class="footer-link">
                 <img src="icon/link.png" alt="培英國中" style="width: 26px; height: auto;">
                 新竹市立培英國中-首頁
             </a>
@@ -51,6 +51,26 @@ function createFooter() {
 
     // Appending container to footer
     footer.appendChild(footerContainer);
+
+    // Append styles for links
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .footer-link {
+            color: #000; /* Default text color */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+        }
+
+        .footer-link:hover {
+            color: #007bff; /* Change color on hover */
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        .footer-link img {
+            vertical-align: middle; /* Align icons vertically with text */
+        }
+    `;
+    document.head.appendChild(style);
 
     // Appending footer to body
     document.body.appendChild(footer);
