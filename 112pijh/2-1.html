@@ -511,22 +511,8 @@
                         </div>
                     </div>
            <!-- Section 3: 生涯發展教育相關研習 pdf Cards -->
-           <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <iframe src="213/Z.pdf" class="card-img-top" style="height: 400px;" frameborder="0"></iframe>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <iframe src="213/Y.pdf" class="card-img-top" style="height: 400px;" frameborder="0"></iframe>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <iframe src="213/W.pdf" class="card-img-top" style="height: 400px;" frameborder="0"></iframe>
-                </div>
-            </div>
+           <div class="row" id="pdfCardsContainer">
+            <!-- PDF cards will be inserted here by the script -->
         </div>
     </div>
 </div>
@@ -603,6 +589,37 @@
             });
         };
         
+        window.onload = function() {
+        const pdfData = [
+            { src: "213/Z.pdf", title: "PDF Z" },
+            { src: "213/Y.pdf", title: "PDF Y" },
+            { src: "213/X.pdf", title: "PDF W" },
+            { src: "213/W.pdf", title: "PDF W" },
+            { src: "213/V.pdf", title: "PDF W" }
+        ];
+
+        const pdfContainer = document.querySelector('#pdfCardsContainer'); // Ensure you have a div with this ID in your HTML
+
+        pdfData.forEach(pdf => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-md-4 mb-4';
+
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+
+            const iframe = document.createElement('iframe');
+            iframe.src = pdf.src;
+            iframe.className = 'card-img-top';
+            iframe.style.height = '400px';
+            iframe.frameBorder = '0';
+
+            cardDiv.appendChild(iframe);
+            colDiv.appendChild(cardDiv);
+            pdfContainer.appendChild(colDiv);
+        });
+
+        // Your existing images code if needed here
+    };
  
     </script>
 </body>
