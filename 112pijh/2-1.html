@@ -595,12 +595,13 @@
             <div class="modal-header">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div the="modal-body">
+            <div class="modal-body">
                 <img src="213/F.jpg" class="img-fluid" alt="Image F">
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- Section 4: 資源運用 -->
 <div class="container">
@@ -697,6 +698,8 @@
                 img.src = item.src;
                 img.className = 'card-img-top';
                 img.alt = item.title;
+                img.setAttribute('data-bs-toggle', 'modal');
+                img.setAttribute('data-bs-target', `#${item.modalId}`);
                 cardDiv.appendChild(img);
             } else if (item.type === "pdf") {
                 const iframe = document.createElement('iframe');
@@ -712,7 +715,6 @@
         });
     }
 </script>
-
 
 
 </body>
