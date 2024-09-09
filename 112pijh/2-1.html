@@ -560,16 +560,17 @@
                 backToTopButton.style.display = 'none';
             }
         };
-     
-        const images = [
-            { src: "211/A.jpg", alt: "Image A", modalId: "imageModalA" },
-            { src: "211/B.jpg", alt: "Image B", modalId: "imageModalB" },
-            { src: "211/C.jpg", alt: "Image C", modalId: "imageModalC" },
-            { src: "211/D.jpg", alt: "Image D", modalId: "imageModalD" },
-            { src: "211/E.jpg", alt: "Image E", modalId: "imageModalE" }
-        ];
-
+    
         window.onload = function() {
+            // Initialize Image Cards
+            const images = [
+                { src: "211/A.jpg", alt: "Image A", modalId: "imageModalA" },
+                { src: "211/B.jpg", alt: "Image B", modalId: "imageModalB" },
+                { src: "211/C.jpg", alt: "Image C", modalId: "imageModalC" },
+                { src: "211/D.jpg", alt: "Image D", modalId: "imageModalD" },
+                { src: "211/E.jpg", alt: "Image E", modalId: "imageModalE" }
+            ];
+    
             const container = document.getElementById('imageCardsContainer');
             
             images.forEach(image => {
@@ -587,40 +588,37 @@
                 colDiv.appendChild(cardDiv);
                 container.appendChild(colDiv);
             });
+    
+            // Initialize PDF Cards
+            const pdfData = [
+                { src: "213/Z.pdf", title: "112學年度第二學期-全校會議簽到表" },
+                { src: "213/Y.pdf", title: "PDF Y" },
+                { src: "213/X.pdf", title: "PDF W" },
+                { src: "213/W.pdf", title: "PDF W" },
+                { src: "213/V.pdf", title: "PDF V" }
+            ];
+    
+            const pdfContainer = document.querySelector('#pdfCardsContainer');
+    
+            pdfData.forEach(pdf => {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'col-md-4 mb-4';
+    
+                const cardDiv = document.createElement('div');
+                cardDiv.className = 'card';
+    
+                const iframe = document.createElement('iframe');
+                iframe.src = pdf.src;
+                iframe.className = 'card-img-top';
+                iframe.style.height = '400px';
+                iframe.frameBorder = '0';
+    
+                cardDiv.appendChild(iframe);
+                colDiv.appendChild(cardDiv);
+                pdfContainer.appendChild(colDiv);
+            });
         };
-        
-        window.onload = function() {
-        const pdfData = [
-            { src: "213/Z.pdf", title: "112學年度第二學期-全校會議簽到表" },
-            { src: "213/Y.pdf", title: "112學年度第一學期-全校會議簽到表" },
-            { src: "213/X.pdf", title: "PDF W" },
-            { src: "213/W.pdf", title: "PDF W" },
-            { src: "213/V.pdf", title: "PDF W" }
-        ];
-
-        const pdfContainer = document.querySelector('#pdfCardsContainer'); // Ensure you have a div with this ID in your HTML
-
-        pdfData.forEach(pdf => {
-            const colDiv = document.createElement('div');
-            colDiv.className = 'col-md-4 mb-4';
-
-            const cardDiv = document.createElement('div');
-            cardDiv.className = 'card';
-
-            const iframe = document.createElement('iframe');
-            iframe.src = pdf.src;
-            iframe.className = 'card-img-top';
-            iframe.style.height = '400px';
-            iframe.frameBorder = '0';
-
-            cardDiv.appendChild(iframe);
-            colDiv.appendChild(cardDiv);
-            pdfContainer.appendChild(colDiv);
-        });
-
-        // Your existing images code if needed here
-    };
- 
     </script>
+    
 </body>
 </html>
