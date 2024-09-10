@@ -15,56 +15,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <style>
-        /* 基本樣式統一 */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f6f9;
             color: #333;
-            margin: 0;
-            padding: 0;
         }
-
-        /* 標題樣式 */
-        h2 {
-            font-size: 2.5rem;
+        h2, h3 {
             font-weight: bold;
             color: #007bff;
+        }
+        h2 {
+            font-size: 2.5rem;
             text-align: center;
             margin: 20px 0;
         }
-
         h3 {
             font-size: 1.75rem;
-            color: #007bff;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
-
-        /* 統一段落樣式 */
         p {
             font-size: 1.1rem;
             line-height: 1.6;
             color: #555;
             margin-bottom: 20px;
         }
-
-        /* Highlight section 統一樣式 */
         .highlight-section {
             padding: 25px;
-            margin: 20px auto;
+            margin: 30px auto;
+            max-width: 1200px;
             background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
-            width: 100%;
             transition: all 0.3s ease;
         }
-
         .highlight-section:hover {
             background-color: #f1f3f5;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
-
-        /* 返回頂部按鈕樣式 */
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -77,46 +64,35 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
         .back-to-top:hover {
             background-color: #0056b3;
         }
-
-        /* 分頁樣式 */
         .pagination {
             font-size: 1.2rem;
             margin-bottom: 30px;
         }
-
         .page-item .page-link {
             color: #007bff;
             font-weight: bold;
             transition: all 0.3s ease;
         }
-
         .page-item .page-link:hover {
             background-color: #007bff;
             color: #fff;
         }
-
-        /* 響應式設計 */
         @media (max-width: 768px) {
             h2 {
                 font-size: 2rem;
             }
-
             h3 {
                 font-size: 1.5rem;
             }
-
             .highlight-section {
                 padding: 15px;
             }
-
             .pagination {
                 font-size: 1rem;
             }
-
             .back-to-top {
                 bottom: 20px;
                 right: 20px;
@@ -140,29 +116,107 @@
         </ul>
     </nav>
 
-    <!-- Section 1: 國中學生生涯檔案及發展紀錄手冊 -->
-    <div class="d-flex justify-content-center">
-        <div class="highlight-section" id="section1">
-            <h3>國中學生生涯檔案及發展紀錄手冊</h3>
-            <p>這一部分介紹了國中學生的生涯檔案及發展紀錄手冊，通過學生的學習歷程、興趣、能力等資訊，幫助學生更好地規劃未來的發展方向。</p>
+  <!-- Sections -->
+  <div class="container">
+    <div class="highlight-section" id="section1">
+        <h3>國中學生生涯檔案及發展紀錄手冊</h3>
+        <div class="row"> <!-- Ensures horizontal alignment of cards -->
+            <!-- Cards will be dynamically inserted here -->
         </div>
+    </div>
+</div>
+    <!-- Modal for Image A 國中學生生涯檔案及發展紀錄手冊-->
+    <div class="modal fade" id="imageModal1A" tabindex="-1" aria-labelledby="imageModal1ALabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="231/A.jpg" class="img-fluid" alt="Image A">
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Modal for Image B 國中學生生涯檔案及發展紀錄手冊-->
+        <div class="modal fade" id="imageModal1B" tabindex="-1" aria-labelledby="imageModal1BLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="231/B.jpg" class="img-fluid" alt="Image B">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Modal for Image C 國中學生生涯檔案及發展紀錄手冊-->
+            <div class="modal fade" id="imageModal1C" tabindex="-1" aria-labelledby="imageModal1CLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="231/C.jpg" class="img-fluid" alt="Image C">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Modal for Image D 國中學生生涯檔案及發展紀錄手冊-->
+    <div class="modal fade" id="imageModal1D" tabindex="-1" aria-labelledby="imageModal1DLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="231/D.jpg" class="img-fluid" alt="Image A">
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Modal for Image E 國中學生生涯檔案及發展紀錄手冊-->
+        <div class="modal fade" id="imageModal1E" tabindex="-1" aria-labelledby="imageModal1ELabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="231/E.jpg" class="img-fluid" alt="Image B">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Modal for Image F 國中學生生涯檔案及發展紀錄手冊-->
+            <div class="modal fade" id="imageModal1F" tabindex="-1" aria-labelledby="imageModal1FLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="231/F.jpg" class="img-fluid" alt="Image C">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Section 2 -->
+    <div class="highlight-section" id="section2">
+        <h3>生涯發展相關心理測驗</h3>
+        <!-- Content for Section 2 -->
     </div>
 
-    <!-- Section 2: 生涯發展相關心理測驗 -->
-    <div class="d-flex justify-content-center">
-        <div class="highlight-section" id="section2">
-            <h3>生涯發展相關心理測驗</h3>
-            <p>心理測驗是幫助學生了解自己個人特質、職業興趣等方面的重要工具，這些測驗可以引導學生探索適合的職業方向。</p>
-        </div>
+    <!-- Section 3 -->
+    <div class="highlight-section" id="section3">
+        <h3>學生進路與追蹤調查</h3>
+        <!-- Content for Section 3 -->
     </div>
-
-    <!-- Section 3: 學生進路與追蹤調查 -->
-    <div class="d-flex justify-content-center">
-        <div class="highlight-section" id="section3">
-            <h3>學生進路與追蹤調查</h3>
-            <p>學生畢業後的進路與追蹤調查有助於了解學生在畢業後的發展動向，為學校的生涯輔導工作提供有效的反饋和建議。</p>
-        </div>
-    </div>
+</div>
 
     <!-- 返回頂部按鈕 -->
     <a href="#top">
@@ -178,15 +232,63 @@
 
     <!-- Optional: Back-to-top button visibility -->
     <script>
-        window.onscroll = function () {
-            const backToTopButton = document.querySelector('.back-to-top');
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        };
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeContent();
+        });
+    
+        function initializeContent() {
+            const pdfImageData1 = [
+                { src: "231/生涯輔導手冊建置與管理實施計畫.pdf", title: "生涯輔導手冊建置與管理實施計畫", type: "pdf" },
+                { src: "231/生涯檔案、輔導手冊檢核辦法.pdf", title: "生涯檔案、輔導手冊檢核辦法", type: "pdf" },
+                { src: "231/生涯檔案建置辦法.pdf", title: "生涯檔案建置辦法", type: "pdf" },
+                { src: "231/A.jpg", alt: "Image A", modalId: "imageModal1A", type: "img" },
+                { src: "231/B.jpg", alt: "Image B", modalId: "imageModal1B", type: "img" },
+                { src: "231/C.jpg", alt: "Image C", modalId: "imageModal1C", type: "img" },
+                { src: "231/D.jpg", alt: "Image D", modalId: "imageModal1D", type: "img" },
+                { src: "231/E.jpg", alt: "Image E", modalId: "imageModal1E", type: "img" },
+                { src: "231/F.jpg", alt: "Image F", modalId: "imageModal1F", type: "img" }
+            ];
+    
+            const container = document.querySelector('#section1 .row'); // Ensuring we are selecting the row for card alignment
+    
+            pdfImageData1.forEach(item => {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'col-md-4 mb-4'; // Adjusts to 3 items per row in medium devices
+                const cardDiv = document.createElement('div');
+                cardDiv.className = 'card h-100'; // Use 'h-100' for equal height cards
+    
+                if (item.type === "img") {
+                    const img = document.createElement('img');
+                    img.src = item.src;
+                    img.alt = item.alt;
+                    img.className = 'card-img-top';
+                    img.setAttribute('data-bs-toggle', 'modal');
+                    img.setAttribute('data-bs-target', `#${item.modalId}`);
+                    cardDiv.appendChild(img);
+                } else if (item.type === "pdf") {
+                    const iframe = document.createElement('iframe');
+                    iframe.src = item.src;
+                    iframe.className = 'card-img-top';
+                    iframe.style.height = '300px'; // Consistent height
+                    iframe.frameBorder = '0';
+                    cardDiv.appendChild(iframe);
+                }
+    
+                const cardBody = document.createElement('div');
+                cardBody.className = 'card-body';
+                const cardTitle = document.createElement('h5');
+                cardTitle.className = 'card-title';
+                cardTitle.textContent = item.title;
+                cardBody.appendChild(cardTitle);
+                cardDiv.appendChild(cardBody);
+    
+                colDiv.appendChild(cardDiv);
+                container.appendChild(colDiv);
+            });
+        }
     </script>
+    
+    
 </body>
 
 </html>
