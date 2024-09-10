@@ -609,8 +609,8 @@
         <div class="highlight-section" id="section4">
             <h3 class="mb-3">資源運用</h3>
             <div class="container">
-                <div class="row">
-                    <!-- Resource use cards will be dynamically inserted if any -->
+                <div class="row" id="resourceCardsContainer">
+                    <!-- Resource cards will be dynamically inserted here -->
                 </div>
             </div>
         </div>
@@ -640,10 +640,11 @@
 
     document.addEventListener('DOMContentLoaded', function() {
         initializeContent();
+        initializeResourceContent();
     });
 
     function initializeContent() {
-        // Initialize Image Cards for Section 3
+        // Initialize Image and PDF Cards for Section 3
         const images = [
             { src: "211/A.jpg", alt: "Image A", modalId: "imageModalA" },
             { src: "211/B.jpg", alt: "Image B", modalId: "imageModalB" },
@@ -652,7 +653,7 @@
             { src: "211/E.jpg", alt: "Image E", modalId: "imageModalE" }
         ];
 
-        const pdfImageData = [
+        const pdfImageData3 = [
             { src: "213/A.jpg", alt: "Image A", modalId: "imageModal3A", type: "img" },
             { src: "213/B.jpg", alt: "Image B", modalId: "imageModal3B", type: "img" },
             { src: "213/C.jpg", alt: "Image C", modalId: "imageModal3C", type: "img" },
@@ -667,9 +668,8 @@
         ];
 
         const imageContainer = document.getElementById('imageCardsContainer');
-        const pdfContainer = document.getElementById('pdfCardsContainer');
+        const pdfContainer3 = document.getElementById('pdfCardsContainer');
 
-        // Add image cards
         images.forEach(image => {
             const colDiv = document.createElement('div');
             colDiv.className = 'col-md-4 mb-4';
@@ -686,13 +686,11 @@
             imageContainer.appendChild(colDiv);
         });
 
-        // Add PDF cards
-        pdfImageData.forEach(item => {
+        pdfImageData3.forEach(item => {
             const colDiv = document.createElement('div');
             colDiv.className = 'col-md-4 mb-4';
             const cardDiv = document.createElement('div');
             cardDiv.className = 'card';
-
             if (item.type === "img") {
                 const img = document.createElement('img');
                 img.src = item.src;
@@ -709,12 +707,40 @@
                 iframe.frameBorder = '0';
                 cardDiv.appendChild(iframe);
             }
-
             colDiv.appendChild(cardDiv);
-            pdfContainer.appendChild(colDiv);
+            pdfContainer3.appendChild(colDiv);
+        });
+    }
+
+    function initializeResourceContent() {
+        // Initialize PDF Cards for Section 4
+        const pdfImageData4 = [
+            { src: "214/112學年度辦理生涯發展相關經費.pdf", title: "PDF 1", type: "pdf" },
+            { src: "214/物力-卡片桌遊目錄.pdf", title: "PDF 2", type: "pdf" },
+            { src: "214/物力-圖書教材目錄.pdf", title: "PDF 3", type: "pdf" },
+            { src: "214/物力-影音教材目錄.pdf", title: "PDF 4", type: "pdf" },
+            { src: "214/培英國中112學年度生涯發展教育計劃經費結報表.pdf", title: "PDF 5", type: "pdf" },
+            { src: "214/培英國中112學年度-生涯發展教育資源運用表.pdf", title: "PDF 6", type: "pdf" }
+        ];
+
+        const resourceContainer = document.getElementById('resourceCardsContainer');
+        pdfImageData4.forEach(item => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-md-4 mb-4';
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+            const iframe = document.createElement('iframe');
+            iframe.src = item.src;
+            iframe.className = 'card-img-top';
+            iframe.style.height = '380px';
+            iframe.frameBorder = '0';
+            cardDiv.appendChild(iframe);
+            colDiv.appendChild(cardDiv);
+            resourceContainer.appendChild(colDiv);
         });
     }
 </script>
+
 
 
 </body>
