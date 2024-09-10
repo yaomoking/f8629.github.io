@@ -251,9 +251,24 @@
                     </div>
                 </div>
 
-    <div class="highlight-section" id="section2">
-        <h3>課程教學研究及融入課程教學</h3>
+                <div class="highlight-section" id="section2">
+                    <h3>課程教學研究及融入課程教學</h3>
+                    <div id="pdfCardsContainer2" class="row"></div> <!-- Container for the cards -->
+                </div>
+           <!-- Modal for Image A 課程教學研究及融入課程教學-->
+<div class="modal fade" id="imageModal2A" tabindex="-1" aria-labelledby="imageModal2ALabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="222/A.jpg" class="img-fluid" alt="Image A">
+            </div>
+        </div>
     </div>
+</div>         
+
     <div class="highlight-section" id="section3">
         <h3>生涯發展教育適性活動</h3>
     </div>
@@ -273,6 +288,7 @@
     <!-- Optional: Back-to-top button visibility -->
  <!-- Back-to-top button script -->
  <script>
+    // Handles the visibility of the back-to-top button based on scroll position
     window.onscroll = function() {
         const backToTopButton = document.querySelector('.back-to-top');
         if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -281,10 +297,14 @@
             backToTopButton.style.display = 'none';
         }
     };
+
+    // Initializes content after the DOM is fully loaded
     document.addEventListener('DOMContentLoaded', function() {
         initializeContent();
     });
+
     function initializeContent() {
+        // Data for PDF and image cards for Section 1
         const pdfImageData1 = [
             { src: "221/A.jpg", alt: "Image A", modalId: "imageModal1A", type: "img" },
             { src: "221/B.jpg", alt: "Image B", modalId: "imageModal1B", type: "img" },
@@ -292,19 +312,20 @@
             { src: "221/D.jpg", alt: "Image D", modalId: "imageModal1D", type: "img" },
             { src: "221/E.jpg", alt: "Image E", modalId: "imageModal1E", type: "img" },
             { src: "221/F.jpg", alt: "Image F", modalId: "imageModal1F", type: "img" },
-            { src: "221/G.jpg", alt: "Image E", modalId: "imageModal1G", type: "img" },
-            { src: "221/H.jpg", alt: "Image F", modalId: "imageModal1H", type: "img" },
             { src: "221/112學年度國中技藝教育課程計畫書-合作式.pdf", title: "PDF 1", type: "pdf" },
-            { src: "221/112學年度國中技藝教育課程計畫書-自辦式.pdf", title: "PDF 2", type: "pdf" },
-            { src: "221/112學年度第一學期-技藝課程遴輔會會議記錄.pdf", title: "PDF 3", type: "pdf" },
-            { src: "221/112學年度第一學期-遴輔會組織.pdf", title: "PDF 4", type: "pdf" },
-            { src: "221/112學年度第一學期-遴輔會會議簽到表.pdf", title: "PDF 5", type: "pdf" },
-            { src: "221/112學年度第二學期-技藝課程遴輔會會議記錄.pdf", title: "PDF 6", type: "pdf" },
-            { src: "221/112學年度第二學期-遴輔會組織.pdf", title: "PDF 7", type: "pdf" },
-            { src: "221/112學年度第二學期-遴輔會會議簽到表.pdf", title: "PDF 8", type: "pdf" },
-            { src: "221/新竹市立培英國民中學 技藝教育課程 遴選輔導流程表.pdf", title: "PDF 9", type: "pdf" },
+            { src: "221/112學年度國中技藝教育課程計畫書-自辦式.pdf", title: "PDF 2", type: "pdf" }
         ];
+
+        // Data for PDF and image cards for Section 2
+        const pdfImageData2 = [
+            { src: "222/A.jpg", alt: "Image A", modalId: "imageModal2A", type: "img" },
+            { src: "222/111學年度第二學期期末-生涯發展教育會議-會議記錄.pdf", title: "PDF 1", type: "pdf" },
+            { src: "222/生涯規劃教育融入領域教學.pdf", title: "PDF 2", type: "pdf" }
+        ];
+
+        // Container for PDF cards in Section 1
         const pdfContainer1 = document.getElementById('pdfCardsContainer1');
+        // Adds cards dynamically based on data above
         pdfImageData1.forEach(item => {
             const colDiv = document.createElement('div');
             colDiv.className = 'col-md-4 mb-4';
@@ -329,8 +350,37 @@
             colDiv.appendChild(cardDiv);
             pdfContainer1.appendChild(colDiv);
         });
+
+        // Container for PDF cards in Section 2
+        const pdfContainer2 = document.getElementById('pdfCardsContainer2');
+        // Adds cards dynamically based on data above
+        pdfImageData2.forEach(item => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-md-4 mb-4';
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+            if (item.type === "img") {
+                const img = document.createElement('img');
+                img.src = item.src;
+                img.alt = item.alt;
+                img.className = 'card-img-top';
+                img.setAttribute('data-bs-toggle', 'modal');
+                img.setAttribute('data-bs-target', `#${item.modalId}`);
+                cardDiv.appendChild(img);
+            } else if (item.type === "pdf") {
+                const iframe = document.createElement('iframe');
+                iframe.src = item.src;
+                iframe.className = 'card-img-top';
+                iframe.style.height = '380px';
+                iframe.frameBorder = '0';
+                cardDiv.appendChild(iframe);
+            }
+            colDiv.appendChild(cardDiv);
+            pdfContainer2.appendChild(colDiv);
+        });
     }
 </script>
+
 </body>
 
 </html>
