@@ -15,89 +15,133 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-        }
-        h2, h3 {
-            font-weight: bold;
-            color: #007bff;
-        }
-        h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin: 20px 0;
-        }
-        h3 {
-            font-size: 1.75rem;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        .highlight-section {
-            padding: 25px;
-            margin: 30px auto;
-            max-width: 1200px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-        .highlight-section:hover {
-            background-color: #f1f3f5;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #007bff;
-            padding: 10px;
-            border-radius: 50%;
-            display: none;
-            z-index: 1000;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .back-to-top:hover {
-            background-color: #0056b3;
-        }
-        .pagination {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        .page-item .page-link {
-            color: #007bff;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-        .page-item .page-link:hover {
-            background-color: #007bff;
-            color: #fff;
-        }
-        @media (max-width: 768px) {
-            h2 {
-                font-size: 2rem;
-            }
-            h3 {
-                font-size: 1.5rem;
-            }
-            .highlight-section {
-                padding: 15px;
-            }
-            .pagination {
-                font-size: 1rem;
-            }
-            .back-to-top {
-                bottom: 20px;
-                right: 20px;
-            }
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+h2, h3 {
+    font-weight: bold;
+    color: #007bff;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.highlight-section {
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.highlight-section:hover {
+    background-color: #f1f3f5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+.pagination {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.page-item .page-link {
+    color: #007bff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.page-item .page-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .highlight-section {
+        padding: 15px;
+    }
+
+    .pagination {
+        font-size: 1rem;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Flexbox container for heading and links */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Right align the links */
+.links-container {
+    display: flex;
+    gap: 10px; /* Space between links */
+}
+
+.links-container a.special-link {
+    color: #28a745;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.links-container a.special-link:hover {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
     </style>
 </head>
 
@@ -116,15 +160,26 @@
         </ul>
     </nav>
 
-  <!-- Sections -->
-  <div class="container">
+<!-- Sections -->
+<div class="container">
     <div class="highlight-section" id="section1">
-        <h3>國中學生生涯檔案及發展紀錄手冊</h3>
+        <div class="section-header d-flex justify-content-between align-items-center">
+            <h3>國中學生生涯檔案及發展紀錄手冊</h3>
+            <div class="links-container">
+                <a href="2311.html" class="special-link">建置、檢核辦法-生涯檔案</a>
+                <a href="2312.html" class="special-link">建置、檢核辦法-生涯輔導手冊</a>
+            </div>
+        </div>
+        
         <div class="row"> <!-- Ensures horizontal alignment of cards -->
             <!-- Cards will be dynamically inserted here -->
         </div>
     </div>
 </div>
+
+
+
+
     <!-- Modal for Image A 國中學生生涯檔案及發展紀錄手冊-->
     <div class="modal fade" id="imageModal1A" tabindex="-1" aria-labelledby="imageModal1ALabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -205,6 +260,162 @@
                 </div>
             </div>
 
+                        <!-- Modal for Image G 國中學生生涯檔案及發展紀錄手冊-->
+                        <div class="modal fade" id="imageModal1G" tabindex="-1" aria-labelledby="imageModal1GLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="231/G.jpg" class="img-fluid" alt="Image C">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <!-- Modal for Image F 國中學生生涯檔案及發展紀錄手冊-->
+            <div class="modal fade" id="imageModal1H" tabindex="-1" aria-labelledby="imageModal1HLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="231/H.jpg" class="img-fluid" alt="Image C">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Modal for Image I 國中學生生涯檔案及發展紀錄手冊-->
+                        <div class="modal fade" id="imageModal1I" tabindex="-1" aria-labelledby="imageModal1ILabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="231/I.jpg" class="img-fluid" alt="Image C">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <!-- Modal for Image J 國中學生生涯檔案及發展紀錄手冊-->
+            <div class="modal fade" id="imageModal1J" tabindex="-1" aria-labelledby="imageModal1JLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="231/J.jpg" class="img-fluid" alt="Image C">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Modal for Image K 國中學生生涯檔案及發展紀錄手冊-->
+                        <div class="modal fade" id="imageModal1K" tabindex="-1" aria-labelledby="imageModal1KLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="231/K.jpg" class="img-fluid" alt="Image C">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <!-- Modal for Image L 國中學生生涯檔案及發展紀錄手冊-->
+            <div class="modal fade" id="imageModal1L" tabindex="-1" aria-labelledby="imageModal1LLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="231/L.jpg" class="img-fluid" alt="Image C">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Modal for Image M 國中學生生涯檔案及發展紀錄手冊-->
+                        <div class="modal fade" id="imageModal1M" tabindex="-1" aria-labelledby="imageModal1MLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="231/N.jpg" class="img-fluid" alt="Image C">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <!-- Modal for Image N 國中學生生涯檔案及發展紀錄手冊-->
+            <div class="modal fade" id="imageModal1N" tabindex="-1" aria-labelledby="imageModal1NLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="231/N.jpg" class="img-fluid" alt="Image C">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Modal for Image O 國中學生生涯檔案及發展紀錄手冊-->
+                        <div class="modal fade" id="imageModal1O" tabindex="-1" aria-labelledby="imageModal1OLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="231/O.jpg" class="img-fluid" alt="Image C">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <!-- Modal for Image P 國中學生生涯檔案及發展紀錄手冊-->
+            <div class="modal fade" id="imageModal1P" tabindex="-1" aria-labelledby="imageModal1PLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="231/P.jpg" class="img-fluid" alt="Image C">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Modal for Image Q 國中學生生涯檔案及發展紀錄手冊-->
+                        <div class="modal fade" id="imageModal1Q" tabindex="-1" aria-labelledby="imageModal1QLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="231/Q.jpg" class="img-fluid" alt="Image C">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <!-- Modal for Image R 國中學生生涯檔案及發展紀錄手冊-->
+            <div class="modal fade" id="imageModal1R" tabindex="-1" aria-labelledby="imageModal1RLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="231/R.jpg" class="img-fluid" alt="Image C">
+                        </div>
+                    </div>
+                </div>
+            </div>
     <!-- Section 2 -->
     <div class="highlight-section" id="section2">
         <h3>生涯發展相關心理測驗</h3>
@@ -238,15 +449,25 @@
     
         function initializeContent() {
             const pdfImageData1 = [
-                { src: "231/生涯輔導手冊建置與管理實施計畫.pdf", title: "生涯輔導手冊建置與管理實施計畫", type: "pdf" },
-                { src: "231/生涯檔案、輔導手冊檢核辦法.pdf", title: "生涯檔案、輔導手冊檢核辦法", type: "pdf" },
-                { src: "231/生涯檔案建置辦法.pdf", title: "生涯檔案建置辦法", type: "pdf" },
+
                 { src: "231/A.jpg", alt: "Image A", modalId: "imageModal1A", type: "img" },
                 { src: "231/B.jpg", alt: "Image B", modalId: "imageModal1B", type: "img" },
                 { src: "231/C.jpg", alt: "Image C", modalId: "imageModal1C", type: "img" },
                 { src: "231/D.jpg", alt: "Image D", modalId: "imageModal1D", type: "img" },
                 { src: "231/E.jpg", alt: "Image E", modalId: "imageModal1E", type: "img" },
-                { src: "231/F.jpg", alt: "Image F", modalId: "imageModal1F", type: "img" }
+                { src: "231/F.jpg", alt: "Image F", modalId: "imageModal1F", type: "img" },
+                { src: "231/G.jpg", alt: "Image G", modalId: "imageModal1G", type: "img" },
+                { src: "231/H.jpg", alt: "Image H", modalId: "imageModal1H", type: "img" },
+                { src: "231/I.jpg", alt: "Image I", modalId: "imageModal1I", type: "img" },
+                { src: "231/J.jpg", alt: "Image J", modalId: "imageModal1J", type: "img" },
+                { src: "231/K.jpg", alt: "Image K", modalId: "imageModal1K", type: "img" },
+                { src: "231/L.jpg", alt: "Image L", modalId: "imageModal1L", type: "img" },
+                { src: "231/M.jpg", alt: "Image M", modalId: "imageModal1M", type: "img" },
+                { src: "231/N.jpg", alt: "Image N", modalId: "imageModal1N", type: "img" },
+                { src: "231/O.jpg", alt: "Image O", modalId: "imageModal1O", type: "img" },
+                { src: "231/P.jpg", alt: "Image P", modalId: "imageModal1P", type: "img" },
+                { src: "231/Q.jpg", alt: "Image Q", modalId: "imageModal1Q", type: "img" },
+                { src: "231/R.jpg", alt: "Image R", modalId: "imageModal1R", type: "img" },
             ];
     
             const container = document.querySelector('#section1 .row'); // Ensuring we are selecting the row for card alignment
