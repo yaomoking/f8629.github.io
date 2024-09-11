@@ -416,13 +416,52 @@ p {
                     </div>
                 </div>
             </div>
-    <!-- Section 2 -->
-    <div class="highlight-section" id="section2">
-        <h3>生涯發展相關心理測驗</h3>
-        <!-- Content for Section 2 -->
-    </div>
+            <div class="highlight-section" id="section2">
+                <h3>生涯發展相關心理測驗</h3>
+                <div class="row"> <!-- 添加行容器 -->
+                    <!-- 卡片将动态插入此处 -->
+                </div>
+            </div>
 
-    <!-- Section 3 -->
+                                                <!-- Modal for Image A 生涯發展相關心理測驗-->
+                                                <div class="modal fade" id="imageModal2A" tabindex="-1" aria-labelledby="imageModal12ALabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <img src="232/A.jpg" class="img-fluid" alt="Image C">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    <!-- Section 3 --><!-- Modal for Image B 生涯發展相關心理測驗-->
+    <div class="modal fade" id="imageModal2B" tabindex="-1" aria-labelledby="imageModal12BLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="232/B.jpg" class="img-fluid" alt="Image C">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Image C 生涯發展相關心理測驗-->
+    <div class="modal fade" id="imageModal2C" tabindex="-1" aria-labelledby="imageModal12CLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="232/C.jpg" class="img-fluid" alt="Image C">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="highlight-section" id="section3">
         <h3>學生進路與追蹤調查</h3>
         <!-- Content for Section 3 -->
@@ -450,34 +489,43 @@ p {
         function initializeContent() {
             const pdfImageData1 = [
 
-                { src: "231/A.jpg", alt: "Image A", modalId: "imageModal1A", type: "img" },
-                { src: "231/B.jpg", alt: "Image B", modalId: "imageModal1B", type: "img" },
-                { src: "231/C.jpg", alt: "Image C", modalId: "imageModal1C", type: "img" },
-                { src: "231/D.jpg", alt: "Image D", modalId: "imageModal1D", type: "img" },
-                { src: "231/E.jpg", alt: "Image E", modalId: "imageModal1E", type: "img" },
-                { src: "231/F.jpg", alt: "Image F", modalId: "imageModal1F", type: "img" },
-                { src: "231/G.jpg", alt: "Image G", modalId: "imageModal1G", type: "img" },
-                { src: "231/H.jpg", alt: "Image H", modalId: "imageModal1H", type: "img" },
-                { src: "231/I.jpg", alt: "Image I", modalId: "imageModal1I", type: "img" },
-                { src: "231/J.jpg", alt: "Image J", modalId: "imageModal1J", type: "img" },
-                { src: "231/K.jpg", alt: "Image K", modalId: "imageModal1K", type: "img" },
-                { src: "231/L.jpg", alt: "Image L", modalId: "imageModal1L", type: "img" },
-                { src: "231/M.jpg", alt: "Image M", modalId: "imageModal1M", type: "img" },
-                { src: "231/N.jpg", alt: "Image N", modalId: "imageModal1N", type: "img" },
-                { src: "231/O.jpg", alt: "Image O", modalId: "imageModal1O", type: "img" },
-                { src: "231/P.jpg", alt: "Image P", modalId: "imageModal1P", type: "img" },
-                { src: "231/Q.jpg", alt: "Image Q", modalId: "imageModal1Q", type: "img" },
-                { src: "231/R.jpg", alt: "Image R", modalId: "imageModal1R", type: "img" },
+                { src: "231/A.jpg", alt: "", modalId: "imageModal1A", type: "img" },
+                { src: "231/B.jpg", alt: "", modalId: "imageModal1B", type: "img" },
+                { src: "231/C.jpg", alt: "", modalId: "imageModal1C", type: "img" },
+                { src: "231/D.jpg", alt: "", modalId: "imageModal1D", type: "img" },
+                { src: "231/E.jpg", alt: "", modalId: "imageModal1E", type: "img" },
+                { src: "231/F.jpg", alt: "", modalId: "imageModal1F", type: "img" },
+                { src: "231/G.jpg", alt: "", modalId: "imageModal1G", type: "img" },
+                { src: "231/H.jpg", alt: "", modalId: "imageModal1H", type: "img" },
+                { src: "231/I.jpg", alt: "", modalId: "imageModal1I", type: "img" },
+                { src: "231/J.jpg", alt: "", modalId: "imageModal1J", type: "img" },
+                { src: "231/K.jpg", alt: "", modalId: "imageModal1K", type: "img" },
+                { src: "231/L.jpg", alt: "", modalId: "imageModal1L", type: "img" },
+                { src: "231/M.jpg", alt: "", modalId: "imageModal1M", type: "img" },
+                { src: "231/N.jpg", alt: "", modalId: "imageModal1N", type: "img" },
+                { src: "231/O.jpg", alt: "", modalId: "imageModal1O", type: "img" },
+                { src: "231/P.jpg", alt: "", modalId: "imageModal1P", type: "img" },
+                { src: "231/Q.jpg", alt: "", modalId: "imageModal1Q", type: "img" },
+                { src: "231/R.jpg", alt: "", modalId: "imageModal1R", type: "img" },
             ];
     
-            const container = document.querySelector('#section1 .row'); // Ensuring we are selecting the row for card alignment
-    
-            pdfImageData1.forEach(item => {
+            const pdfImageData2 = [
+            { src: "232/A.jpg", alt: "", modalId: "imageModal2A", type: "img" },
+            { src: "232/B.jpg", alt: "", modalId: "imageModal2B", type: "img" },
+            { src: "232/C.jpg", alt: "", modalId: "imageModal2C", type: "img" }
+        ];
+
+        const section1Container = document.querySelector('#section1 .row');
+        const section2Container = document.querySelector('#section2 .row'); // 确保选择 section2 的行
+
+        // Function to create cards
+        function createCards(dataArray, container) {
+            dataArray.forEach(item => {
                 const colDiv = document.createElement('div');
-                colDiv.className = 'col-md-4 mb-4'; // Adjusts to 3 items per row in medium devices
+                colDiv.className = 'col-md-4 mb-4'; // 3 items per row
                 const cardDiv = document.createElement('div');
-                cardDiv.className = 'card h-100'; // Use 'h-100' for equal height cards
-    
+                cardDiv.className = 'card h-100'; // Ensure equal height for cards
+
                 if (item.type === "img") {
                     const img = document.createElement('img');
                     img.src = item.src;
@@ -486,28 +534,26 @@ p {
                     img.setAttribute('data-bs-toggle', 'modal');
                     img.setAttribute('data-bs-target', `#${item.modalId}`);
                     cardDiv.appendChild(img);
-                } else if (item.type === "pdf") {
-                    const iframe = document.createElement('iframe');
-                    iframe.src = item.src;
-                    iframe.className = 'card-img-top';
-                    iframe.style.height = '300px'; // Consistent height
-                    iframe.frameBorder = '0';
-                    cardDiv.appendChild(iframe);
                 }
-    
+
                 const cardBody = document.createElement('div');
                 cardBody.className = 'card-body';
                 const cardTitle = document.createElement('h5');
                 cardTitle.className = 'card-title';
-                cardTitle.textContent = item.title;
+                cardTitle.textContent = item.alt;
                 cardBody.appendChild(cardTitle);
                 cardDiv.appendChild(cardBody);
-    
+
                 colDiv.appendChild(cardDiv);
                 container.appendChild(colDiv);
             });
         }
-    </script>
+
+        // Generate cards for both sections
+        createCards(pdfImageData1, section1Container);
+        createCards(pdfImageData2, section2Container);
+    }
+</script>
     
     
 </body>
