@@ -153,6 +153,18 @@ function createNavBar() {
     navBar.appendChild(containerDiv);
 
     document.body.prepend(navBar);
+
+    // Append custom CSS for hover dropdowns
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+    `;
+    document.head.appendChild(style);
 }
 
 // Call the function to create and insert the navbar
