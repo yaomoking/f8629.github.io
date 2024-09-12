@@ -85,23 +85,15 @@
         <img src="icon/arrow.png" class="back-to-top" alt="返回本頁頂部" width="26px">
     </a>
 
-    <!-- 引入 navbar.js 文件 -->
-    <script src="navbar.js"></script>
-    <!-- 引入 footer.js 文件 -->
-    <script src="footer.js"></script>
-    <!-- 引入 modals.js 文件 -->
-    <script src="modals.js"></script>
+<!-- External JavaScript files -->
+<script src="navbar.js"></script>
+<script src="footer.js"></script>
+<script src="backToTop.js"></script>
+<script src="modals.js"></script>
 
     <!-- Optional: Back-to-top button visibility -->
     <script>
-        window.onscroll = function () {
-            const backToTopButton = document.querySelector('.back-to-top');
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        };
+
     </script>
 </body>
 </html>

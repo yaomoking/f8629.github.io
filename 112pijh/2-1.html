@@ -625,18 +625,12 @@
 <!-- External JavaScript files -->
 <script src="navbar.js"></script>
 <script src="footer.js"></script>
+<script src="backToTop.js"></script>
 <script src="modals.js"></script>
 
 <!-- Back-to-top button script -->
 <script>
-    window.onscroll = function() {
-        const backToTopButton = document.querySelector('.back-to-top');
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            backToTopButton.style.display = 'block';
-        } else {
-            backToTopButton.style.display = 'none';
-        }
-    };
+
 
     document.addEventListener('DOMContentLoaded', function() {
         initializeContent();
