@@ -59,7 +59,7 @@ function createFooter() {
             color: #000; /* Default text color */
             text-decoration: none; /* Remove underline */
             transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow for footer links */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Text shadow for footer links */
         }
 
         .footer-link:hover {
@@ -72,7 +72,7 @@ function createFooter() {
         }
 
         .footer-text {
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow for footer text */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Text shadow for footer text */
         }
     `;
     document.head.appendChild(style);
