@@ -159,9 +159,15 @@ function createNavBar() {
     style.innerHTML = `
         .dropdown:hover .dropdown-menu {
             display: block;
+            background-color: #BBFFFF;
         }
         .dropdown-menu {
             display: none;
+            
+        }
+        .dropdown-item:hover {
+            
+            background-color: #FFFFB9; /* 懸停時背景顏色設置為亮黃色 */
         }
     `;
     document.head.appendChild(style);
