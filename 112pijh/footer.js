@@ -13,16 +13,21 @@ function createFooter() {
     // Left Column
     const colLeft = document.createElement('div');
     colLeft.className = 'col-md-6 text-start';
+    colLeft.style.fontSize = '14.8px';  
     colLeft.innerHTML = `
+   
         <span class="footer-text">新竹市東區培英國中</span><br>
         <span class="footer-text">30068 新竹市學府路4號 No. 4, Xuefu Rd., East Dist., Hsinchu City, Taiwan (R.O.C.)</span><br>
-        <span class="footer-text">電話 03-5721301 傳真 03-5726578</span><br>
+        <span class="footer-text">電話 03-5721301 傳真 03-5726578</span>
+        <br />
     `;
 
     // Right Column
     const colRight = document.createElement('div');
     colRight.className = 'col-md-6 text-end';
+    colRight.style.fontSize = '14.8px';  
     colRight.innerHTML = `
+   
         <div style="display: inline-flex; gap: 10px; align-items: center;">
             <a href="mailto:pijh06@hc.edu.tw" class="footer-link">
                 <img src="icon/email.png" alt="Email Icon" style="width: 24px; height: auto;">
@@ -37,9 +42,11 @@ function createFooter() {
                 <img src="icon/link.png" alt="培英國中" style="width: 26px; height: auto;">
                 新竹市立培英國中-首頁
             </a>
-        </div><br>
+        </div>
+        <br />
         <span class="footer-text">建議最佳瀏覽環境: Chrome 62 以上版本、Firefox 56 以上版本、Microsoft Edge</span><br>
         <span class="footer-text">Design by LO WEI JHIH</span>
+        <br />
     `;
 
     // Appending columns to row
