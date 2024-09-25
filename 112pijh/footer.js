@@ -1,7 +1,7 @@
 function createFooter() {
     const footer = document.createElement('footer');
     footer.className = 'text-center';
-    footer.style.backgroundColor = '#c0e6a5';
+    footer.style.background = 'linear-gradient(90deg, #c0e6a5, #82c6e2)';
     footer.style.padding = '20px 0';
 
     const footerContainer = document.createElement('div');
