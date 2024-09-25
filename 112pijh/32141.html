@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="新竹市立培英國民中學 - 提供學校資訊與最新公告，生涯發展教育與技藝教育詳細介紹">
+    <meta name="keywords" content="新竹, 培英國中, 國民中學, 生涯發展教育, 技藝教育, 學校資訊, 最新公告">
+    <meta name="author" content="新竹市立培英國民中學">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <title>竹工-電機上課照片</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2,
+        h3 {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            margin-top: 20px;
+            max-width: 1200px;
+        }
+
+        .pagination {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .page-item .page-link {
+            color: #007bff;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .page-item .page-link:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 50%;
+            display: none;
+            z-index: 1000;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .pagination {
+                font-size: 1rem;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Anchor -->
+    <a name="top"></a>    
+    <div class="container">
+        <h2 class="my-4 text-center">竹工-電機上課照片</h2>
+        <div class="row" id="pdfCardsContainer"></div>
+    </div>
+
+    <!-- 修正的Modal 結構 -->
+    <div class="modal fade" id="imageModal1A" tabindex="-1" aria-labelledby="imageModal1ALabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/4/1/A.jpg" class="img-fluid" alt="Image A">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal1B" tabindex="-1" aria-labelledby="imageModal1BLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/4/1/B.jpg" class="img-fluid" alt="Image A">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal1C" tabindex="-1" aria-labelledby="imageModal1CLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/4/1/C.jpg" class="img-fluid" alt="Image A">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal1D" tabindex="-1" aria-labelledby="imageModal1DLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/4/1/D.jpg" class="img-fluid" alt="Image A">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal1E" tabindex="-1" aria-labelledby="imageModal1ELabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/4/1/E.jpg" class="img-fluid" alt="Image A">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Back to top button -->
+    <a href="#top">
+        <img src="icon/arrow.png" class="back-to-top" alt="返回本頁頂部" width="26px">
+    </a>
+
+    <!-- External JavaScript files -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="backToTop.js"></script>
+    <script src="modals.js"></script>
+    
+    <!-- Content Initialization Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeContent();
+        });
+
+        function initializeContent() {
+            // Data for PDF and image cards for Section 1
+            const pdfImageData = [
+                { src: "321/4/1/A.jpg", alt: "Image A", modalId: "imageModal1A", type: "img" },
+                { src: "321/4/1/B.jpg", alt: "Image B", modalId: "imageModal1B", type: "img" },
+                { src: "321/4/1/C.jpg", alt: "Image A", modalId: "imageModal1C", type: "img" },
+                { src: "321/4/1/D.jpg", alt: "Image B", modalId: "imageModal1D", type: "img" },
+                { src: "321/4/1/E.jpg", alt: "Image B", modalId: "imageModal1E", type: "img" },
+            ];
+
+            const pdfContainer = document.getElementById('pdfCardsContainer');
+
+            pdfImageData.forEach(item => {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'col-md-4 mb-4';
+                const cardDiv = document.createElement('div');
+                cardDiv.className = 'card';
+
+                if (item.type === 'pdf') {
+                    const iframe = document.createElement('iframe');
+                    iframe.src = item.src;
+                    iframe.className = 'card-img-top';
+                    iframe.style.height = '380px';
+                    iframe.frameBorder = '0';
+                    cardDiv.appendChild(iframe);
+
+                    const cardBody = document.createElement('div');
+                    cardBody.className = 'card-body';
+                    const cardTitle = document.createElement('h5');
+                    cardTitle.className = 'card-title';
+                    cardTitle.textContent = item.title;
+                    cardBody.appendChild(cardTitle);
+                    cardDiv.appendChild(cardBody);
+                } else if (item.type === 'img') {
+                    const img = document.createElement('img');
+                    img.src = item.src;
+                    img.alt = item.alt;
+                    img.className = 'card-img-top';
+                    img.setAttribute('data-bs-toggle', 'modal');
+                    img.setAttribute('data-bs-target', `#${item.modalId}`);
+                    cardDiv.appendChild(img);
+                }
+
+                colDiv.appendChild(cardDiv);
+                pdfContainer.appendChild(colDiv);
+            });
+        }
+    </script>
+</body>
+</html>

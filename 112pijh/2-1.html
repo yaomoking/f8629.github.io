@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="新竹市立培英國民中學 - 提供學校資訊與最新公告，生涯發展教育與技藝教育詳細介紹">
+    <meta name="keywords" content="新竹, 培英國中, 國民中學, 生涯發展教育, 技藝教育, 學校資訊, 最新公告">
+    <meta name="author" content="新竹市立培英國民中學">
+    <link rel="icon" href="logo.png" type="image/png"> 
+    <title>行政措施與組織運作</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 標題樣式 */
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        /* 統一段落樣式 */
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Highlight section 統一樣式 */
+        .highlight-section {
+            padding: 25px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .highlight-section:hover {
+            background-color: #f1f3f5;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 返回頂部按鈕樣式 */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 50%;
+            display: none;
+            z-index: 1000;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+
+        /* 分頁樣式 */
+        .pagination {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .page-item .page-link {
+            color: #007bff;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .page-item .page-link:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* 調整 Modal 彈窗 */
+        .modal-body img {
+            max-width: 100%;
+            height: auto;
+        }
+               /* 響應式設計 */
+               @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .highlight-section {
+                padding: 15px;
+            }
+
+            .pagination {
+                font-size: 1rem;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Anchor -->
+    <a name="top"></a>
+   
+    <h2 class="text-center">生涯發展教育-行政措施與組織運作</h2> 
+
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example" class="mb-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#section1">生涯發展教育工作執行委員會</a></li>
+            <li class="page-item"><a class="page-link" href="#section2">技藝教育遴薦及輔導機制</a></li>
+            <li class="page-item"><a class="page-link" href="#section3">生涯發展教育相關研習</a></li>
+            <li class="page-item"><a class="page-link" href="#section4">資源運用</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="highlight-section" id="section1">
+                <h3 class="mb-3">生涯發展教育工作執行委員會</h3>
+
+                <!--生涯發展教育工作執行委員會 Cards -->
+                <div class="container">
+                    <div class="row">
+                        <!-- Corrected Modal and Card IDs -->
+                        <div class="container">
+                            <div class="row" id="imageCardsContainer">
+                                <!-- 卡片將會由 JavaScript 動態插入 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals for Images 生涯發展教育工作執行委員會 -->
+        <div class="modal fade" id="imageModalA" tabindex="-1" aria-labelledby="imageModalALabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/1/1.jpg" class="img-fluid" alt="Image A">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModalB" tabindex="-1" aria-labelledby="imageModalBLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/1/2.jpg" class="img-fluid" alt="Image B">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModalC" tabindex="-1" aria-labelledby="imageModalCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/1/3.jpg" class="img-fluid" alt="Image C">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModalD" tabindex="-1" aria-labelledby="imageModalDLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/1/4.jpg" class="img-fluid" alt="Image D">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModalE" tabindex="-1" aria-labelledby="imageModalELabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/1/5.jpg" class="img-fluid" alt="Image E">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: 技藝教育遴薦及輔導機制 -->
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="highlight-section" id="section2">
+                    <h3 class="mb-3">技藝教育遴薦及輔導機制</h3>
+    
+                    <!--生涯發展教育工作執行委員會 Cards -->
+                    <div class="container">
+                        <div class="row">
+                            <!-- Corrected Modal and Card IDs -->
+                            <div class="container">
+                                <div class="row" id="pdfCardsContainer2">
+                                    <!-- 卡片將會由 JavaScript 動態插入 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Section 2: 技藝教育遴薦及輔導機制 Modals for Images-->
+        <div class="modal fade" id="imageModal2A" tabindex="-1" aria-labelledby="imageModalALabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/1.jpg" class="img-fluid" alt="Image A">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2B" tabindex="-1" aria-labelledby="imageModal2BLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/2.jpg" class="img-fluid" alt="Image B">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2C" tabindex="-1" aria-labelledby="imageModal2CLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/3.jpg" class="img-fluid" alt="Image C">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2D" tabindex="-1" aria-labelledby="imageModal2DLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/4.jpg" class="img-fluid" alt="Image D">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2E" tabindex="-1" aria-labelledby="imageModal2ELabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/5.jpg" class="img-fluid" alt="Image E">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2F" tabindex="-1" aria-labelledby="imageModal2BLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/6.jpg" class="img-fluid" alt="Image B">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2G" tabindex="-1" aria-labelledby="imageModal2CLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/7.jpg" class="img-fluid" alt="Image C">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2H" tabindex="-1" aria-labelledby="imageModal2DLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/8.jpg" class="img-fluid" alt="Image D">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2I" tabindex="-1" aria-labelledby="imageModal2ILabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/9.jpg" class="img-fluid" alt="Image E">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2J" tabindex="-1" aria-labelledby="imageModal2JLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/10.jpg" class="img-fluid" alt="Image B">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2K" tabindex="-1" aria-labelledby="imageModal2KLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/11.jpg" class="img-fluid" alt="Image C">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2L" tabindex="-1" aria-labelledby="imageModal2LLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/12.jpg" class="img-fluid" alt="Image D">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="imageModal2M" tabindex="-1" aria-labelledby="imageModal2MLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="211/2/13.jpg" class="img-fluid" alt="Image E">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section 3: 生涯發展教育相關研習 -->
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <div class="highlight-section" id="section3">
+            <h3 class="mb-3">生涯發展教育相關研習</h3>
+
+            <!--生涯發展教育相關研習 Cards -->
+            <div class="container">
+                <div class="row" id="imageCardsContainer">
+                    <!-- Cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Section 3: 生涯發展教育相關研習 PDF Cards -->
+            <div class="container">
+                <div class="row" id="pdfCardsContainer">
+                    <!-- PDF cards will be inserted here by the script -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Image A -->
+<div class="modal fade" id="imageModal3A" tabindex="-1" aria-labelledby="imageModal3ALabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="211/3/1.jpg" class="img-fluid" alt="Image A">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal for Image B -->
+<div class="modal fade" id="imageModal3B" tabindex="-1" aria-labelledby="imageModal3BLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="211/3/2.jpg" class="img-fluid" alt="Image B">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Image C -->
+<div class="modal fade" id="imageModal3C" tabindex="-1" aria-labelledby="imageModal3CLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="211/3/3.jpg" class="img-fluid" alt="Image C">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Image D -->
+<div class="modal fade" id="imageModal3D" tabindex="-1" aria-labelledby="imageModal3DLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="211/3/4.jpg" class="img-fluid" alt="Image D">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Image E -->
+<div class="modal fade" id="imageModal3E" tabindex="-1" aria-labelledby="imageModal3ELabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div the="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="211/3/5.jpg" class="img-fluid" alt="Image E">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Image F -->
+<div class="modal fade" id="imageModal3F" tabindex="-1" aria-labelledby="imageModal3FLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="211/3/6.jpg" class="img-fluid" alt="Image F">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Section 4: 資源運用 -->
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <div class="highlight-section" id="section4">
+            <h3 class="mb-3">資源運用</h3>
+            <div class="container">
+                <div class="row" id="resourceCardsContainer">
+                    <!-- Resource cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Back-to-top Button -->
+<a href="#top">
+    <img src="icon/arrow.png" class="back-to-top" alt="返回本頁頂部" width="26px">
+</a>
+
+<!-- External JavaScript files -->
+<script src="navbar.js"></script>
+<script src="footer.js"></script>
+<script src="backToTop.js"></script>
+<script src="modals.js"></script>
+
+<!-- Back-to-top button script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeContent();
+        initializeResourceContent();
+    });
+
+    function initializeContent() {
+        // Initialize Image and PDF Cards for Section 3
+        const images = [
+            { src: "211/1/1.jpg", alt: "Image A", modalId: "imageModalA" },
+            { src: "211/1/2.jpg", alt: "Image B", modalId: "imageModalB" },
+            { src: "211/1/3.jpg", alt: "Image C", modalId: "imageModalC" },
+            { src: "211/1/4.jpg", alt: "Image D", modalId: "imageModalD" },
+            { src: "211/1/5.jpg", alt: "Image E", modalId: "imageModalE" }
+        ];
+
+        const pdfImageData2 = [
+            { src: "211/2/1.jpg", alt: "Image A", modalId: "imageModal2A", type: "img" },
+            { src: "211/2/2.jpg", alt: "Image B", modalId: "imageModal2B", type: "img" },
+            { src: "211/2/3.jpg", alt: "Image C", modalId: "imageModal2C", type: "img" },
+            { src: "211/2/4.jpg", alt: "Image D", modalId: "imageModal2D", type: "img" },
+            { src: "211/2/5.jpg", alt: "Image E", modalId: "imageModal2E", type: "img" },
+            { src: "211/2/6.jpg", alt: "Image F", modalId: "imageModal2F", type: "img" },
+            { src: "211/2/7.jpg", alt: "Image G", modalId: "imageModal2G", type: "img" },
+            { src: "211/2/8.jpg", alt: "Image H", modalId: "imageModal2H", type: "img" },
+            { src: "211/2/9.jpg", alt: "Image I", modalId: "imageModal2I", type: "img" },
+            { src: "211/2/10.jpg", alt: "Image J", modalId: "imageModal2J", type: "img" },
+            { src: "211/2/11.jpg", alt: "Image K", modalId: "imageModal2K", type: "img" },
+            { src: "211/2/12.jpg", alt: "Image L", modalId: "imageModal2L", type: "img" },
+            { src: "211/2/13.jpg", alt: "Image M", modalId: "imageModal2M", type: "img" },
+            { src: "https://drive.google.com/file/d/1Oc2N533_gyQRd6n4gA2va8RQas_tJbz6/preview", title: "PDF 1", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1k64E0TB_SyH3fRiSu7BCokxYw1QGpfK6/preview", title: "PDF 1", type: "pdf" },
+        ];
+
+        const pdfImageData3 = [
+            { src: "211/3/1.jpg", alt: "Image A", modalId: "imageModal3A", type: "img" },
+            { src: "211/3/2.jpg", alt: "Image B", modalId: "imageModal3B", type: "img" },
+            { src: "211/3/3.jpg", alt: "Image C", modalId: "imageModal3C", type: "img" },
+            { src: "211/3/4.jpg", alt: "Image D", modalId: "imageModal3D", type: "img" },
+            { src: "211/3/5.jpg", alt: "Image E", modalId: "imageModal3E", type: "img" },
+            { src: "211/3/6.jpg", alt: "Image F", modalId: "imageModal3F", type: "img" },
+            { src: "https://drive.google.com/file/d/1dVk086gW7IMwYYf97It5A08wq8d1vNuj/preview", title: "PDF 1", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1rLQmc_nIeJyiHbpgizoUfBo2J3NioUSq/preview", title: "PDF 2", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1o4cGiteogcouIVFOQWfeA3yoSoHqCkhw/preview", title: "PDF 3", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1K17XotGy-PKH_PHgewnieuvW1D6qHVjJ/preview", title: "PDF 4", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1Re7Q0KJhrOuXg3PFdFL21JviKeRfOJmJ/preview", title: "PDF 5", type: "pdf" }
+        ];
+
+        const imageContainer = document.getElementById('imageCardsContainer');
+        const pdfContainer3 = document.getElementById('pdfCardsContainer');
+        const pdfContainer2 = document.getElementById('pdfCardsContainer2'); // 新增的容器，放置 pdfImageData2 的內容
+
+        images.forEach(image => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-md-4 mb-4';
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+            const img = document.createElement('img');
+            img.src = image.src;
+            img.alt = image.alt;
+            img.className = 'card-img-top';
+            img.setAttribute('data-bs-toggle', 'modal');
+            img.setAttribute('data-bs-target', `#${image.modalId}`);
+            cardDiv.appendChild(img);
+            colDiv.appendChild(cardDiv);
+            imageContainer.appendChild(colDiv);
+        });
+
+        pdfImageData3.forEach(item => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-md-4 mb-4';
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+            if (item.type === "img") {
+                const img = document.createElement('img');
+                img.src = item.src;
+                img.className = 'card-img-top';
+                img.alt = item.title;
+                img.setAttribute('data-bs-toggle', 'modal');
+                img.setAttribute('data-bs-target', `#${item.modalId}`);
+                cardDiv.appendChild(img);
+            } else if (item.type === "pdf") {
+                const iframe = document.createElement('iframe');
+                iframe.src = item.src;
+                iframe.className = 'card-img-top';
+                iframe.style.height = '380px';
+                iframe.frameBorder = '0';
+                cardDiv.appendChild(iframe);
+            }
+            colDiv.appendChild(cardDiv);
+            pdfContainer3.appendChild(colDiv);
+        });
+
+        // 新增 pdfImageData2 的初始化
+        pdfImageData2.forEach(item => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-md-4 mb-4';
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+            if (item.type === "img") {
+                const img = document.createElement('img');
+                img.src = item.src;
+                img.className = 'card-img-top';
+                img.alt = item.alt;
+                img.setAttribute('data-bs-toggle', 'modal');
+                img.setAttribute('data-bs-target', `#${item.modalId}`);
+                cardDiv.appendChild(img);
+            } else if (item.type === "pdf") {
+                const iframe = document.createElement('iframe');
+                iframe.src = item.src;
+                iframe.className = 'card-img-top';
+                iframe.style.height = '380px';
+                iframe.frameBorder = '0';
+                cardDiv.appendChild(iframe);
+            }
+            colDiv.appendChild(cardDiv);
+            pdfContainer2.appendChild(colDiv);
+        });
+    }
+
+    function initializeResourceContent() {
+        // Initialize PDF Cards for Section 4
+        const pdfImageData4 = [
+            { src: "https://drive.google.com/file/d/13UVPidx7OVCH961ZVyCxCfz488f0axnl/preview", title: "PDF 1", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1_DAOJZ2syD8SHNE5AMBo6Uw_FL0voF-m/preview", title: "PDF 2", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1kBjZUouZG0wC7Imra6cDLTfkemxU1HV7/preview", title: "PDF 3", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1bEahRif_7VaUVZ4gFN8C5NtvG83oyIl7/preview", title: "PDF 4", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1LlKClWRy53b4iClYcaBE2SwnWA530fH2/preview", title: "PDF 5", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1VzSXjvwHOqCUDNstNr4b3KDyfLmzgdkK/preview", title: "PDF 6", type: "pdf" }
+        ];
+
+        const resourceContainer = document.getElementById('resourceCardsContainer');
+        pdfImageData4.forEach(item => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-md-4 mb-4';
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+            const iframe = document.createElement('iframe');
+            iframe.src = item.src;
+            iframe.className = 'card-img-top';
+            iframe.style.height = '380px';
+            iframe.frameBorder = '0';
+            cardDiv.appendChild(iframe);
+            colDiv.appendChild(cardDiv);
+            resourceContainer.appendChild(colDiv);
+        });
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="新竹市立培英國民中學 - 提供學校資訊與最新公告，生涯發展教育與技藝教育詳細介紹">
+    <meta name="keywords" content="新竹, 培英國中, 國民中學, 生涯發展教育, 技藝教育, 學校資訊, 最新公告">
+    <meta name="author" content="新竹市立培英國民中學">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <title>課程與教學</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+    
+        h2,
+        h3 {
+            font-weight: bold;
+            color: #007bff;
+        }
+    
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+    
+        h3 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+    
+        .container {
+            margin-top: 20px;
+            max-width: 1200px;
+        }
+    
+        /* Flexbox to keep links in one line */
+        .school-links {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center; /* 中心對齊 */
+            flex-wrap: nowrap; /* 不換行 */
+            gap: 10px; /* 連結之間的間距 */
+        }
+    
+        .school-links a {
+            color: #fff;  /* 字體顏色為白色 */
+            background-color: #28a745;  /* 背景為綠色 */
+            font-weight: bold;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            white-space: nowrap;  /* 防止文字換行 */
+        }
+    
+        .school-links a:hover {
+            background-color: #fff;  /* 滑過時背景變為白色 */
+            color: #28a745;  /* 滑過時字體顏色變為綠色 */
+            text-decoration: none;
+            border: 1px solid #28a745;  /* 增加綠色邊框 */
+        }
+    
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 50%;
+            display: none;
+            z-index: 1000;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+    
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+    
+            h3 {
+                font-size: 1.5rem;
+            }
+    
+            .pagination {
+                font-size: 1rem;
+            }
+    
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+    
+    
+</head>
+
+<body>
+    <!-- Top Anchor -->
+    <a name="top"></a>
+
+    <div class="container">
+        <h2 class="my-4">技藝教育抽離式課程-課程與教學</h2>
+        <p class="school-links">
+            <a href="3211.html">各校資料 仁德-醫護</a>
+            <a href="3212.html">各校資料 世界-設計、餐旅</a>
+            <a href="3213.html">各校資料 光復-電機、家政、動力機械</a>
+            <a href="3214.html">各校資料 竹工-電機</a>
+            <a href="3215.html">各校資料 東泰-電機</a>
+        </p>
+        <!-- Bootstrap Card Section -->
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="321/A.jpg" class="card-img-top" alt="課程與教學圖片" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <div class="card-body">
+                        <h5 class="card-title">課程與教學</h5>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal to display full image -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">課程與教學</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="321/A.jpg" class="img-fluid" alt="課程與教學圖片大圖">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Back to top button -->
+    <a href="#top">
+        <img src="icon/arrow.png" class="back-to-top" alt="返回本頁頂部" width="26px">
+    </a>
+
+    <!-- External JavaScript files -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="backToTop.js"></script>
+    <script src="modals.js"></script>
+
+</body>
+
+</html>

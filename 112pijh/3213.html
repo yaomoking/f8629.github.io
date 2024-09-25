@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="新竹市立培英國民中學 - 提供學校資訊與最新公告，生涯發展教育與技藝教育詳細介紹">
+    <meta name="keywords" content="新竹, 培英國中, 國民中學, 生涯發展教育, 技藝教育, 學校資訊, 最新公告">
+    <meta name="author" content="新竹市立培英國民中學">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <title>光復-電機、家政、動力機械</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2,
+        h3 {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            margin-top: 20px;
+            max-width: 1200px;
+        }
+
+        .link-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .link-group a {
+            color: #fff;
+            background-color: #28a745; /* 綠色背景 */
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .link-group a:hover {
+            background-color: #fff;
+            color: #28a745; /* 滑過時顯示綠色字體 */
+            border: 1px solid #28a745; /* 增加綠色邊框 */
+        }
+
+        .pagination {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .page-item .page-link {
+            color: #007bff;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .page-item .page-link:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 50%;
+            display: none;
+            z-index: 1000;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .pagination {
+                font-size: 1rem;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <!-- Top Anchor -->
+        <a name="top"></a>
+    <div class="container">
+        <h2 class="my-4 text-center">各校資料 光復-電機、家政、動力機械</h2>
+        <!-- Links -->
+        <div class="link-group">
+            <a href="32131.html">11201 培英 家政A班照片</a>
+            <a href="32132.html">11201 培英 電機B班照片</a>
+            <a href="32133.html">11202 培英 動機A班照片</a>
+        </div>
+        <div class="row" id="pdfCardsContainer"></div>
+    </div>
+
+    <div class="modal fade" id="imageModal1A" tabindex="-1" aria-labelledby="imageModal1ALabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/A.jpg" class="img-fluid" alt="Image A">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="imageModal1B" tabindex="-1" aria-labelledby="imageModal1BLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/B.jpg" class="img-fluid" alt="Image B">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="imageModal1C" tabindex="-1" aria-labelledby="imageModal1CLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/C.jpg" class="img-fluid" alt="Image C">
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="modal fade" id="imageModal1D" tabindex="-1" aria-labelledby="imageModal1DLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/D.jpg" class="img-fluid" alt="Image D">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal1E" tabindex="-1" aria-labelledby="imageModal1ELabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/E.jpg" class="img-fluid" alt="Image D">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal1F" tabindex="-1" aria-labelledby="imageModal1FLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/F.jpg" class="img-fluid" alt="Image F">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="imageModal1G" tabindex="-1" aria-labelledby="imageModal1GLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/G.jpg" class="img-fluid" alt="Image G">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="imageModal1H" tabindex="-1" aria-labelledby="imageModal1HLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/H.jpg" class="img-fluid" alt="Image H">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="imageModal1I" tabindex="-1" aria-labelledby="imageModal1ILabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/I.jpg" class="img-fluid" alt="Image I">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="imageModal1J" tabindex="-1" aria-labelledby="imageModal1JLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/J.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal1K" tabindex="-1" aria-labelledby="imageModal1KLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/K.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal1L" tabindex="-1" aria-labelledby="imageModal1LLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/L.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal1M" tabindex="-1" aria-labelledby="imageModal1MLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/M.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="imageModal1N" tabindex="-1" aria-labelledby="imageModal1NLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/N.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal1O" tabindex="-1" aria-labelledby="imageModal1OLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="321/3/O.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Back to top button -->
+    <a href="#top">
+        <img src="icon/arrow.png" class="back-to-top" alt="返回本頁頂部" width="26px">
+    </a>
+
+    <!-- External JavaScript files -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="backToTop.js"></script>
+    <script src="modals.js"></script>
+
+    <!-- Content Initialization Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeContent();
+        });
+
+        function initializeContent() {
+            // Data for PDF and image cards for Section 1
+            const pdfImageData = [
+                { src: "321/3/A.jpg", alt: "", modalId: "imageModal1A", type: "img" },
+                { src: "321/3/B.jpg", alt: "", modalId: "imageModal1B", type: "img" },
+                { src: "321/3/C.jpg", alt: "", modalId: "imageModal1C", type: "img" },
+                { src: "321/3/D.jpg", alt: "", modalId: "imageModal1D", type: "img" },
+                { src: "321/3/E.jpg", alt: "", modalId: "imageModal1E", type: "img" },
+                { src: "321/3/F.jpg", alt: "", modalId: "imageModal1F", type: "img" },
+                { src: "321/3/G.jpg", alt: "", modalId: "imageModal1G", type: "img" },
+                { src: "321/3/H.jpg", alt: "", modalId: "imageModal1H", type: "img" },
+                { src: "321/3/I.jpg", alt: "", modalId: "imageModal1I", type: "img" },
+                { src: "321/3/J.jpg", alt: "", modalId: "imageModal1J", type: "img" },
+                { src: "321/3/K.jpg", alt: "", modalId: "imageModal1K", type: "img" },
+                { src: "321/3/L.jpg", alt: "", modalId: "imageModal1L", type: "img" },
+                { src: "321/3/M.jpg", alt: "", modalId: "imageModal1M", type: "img" },
+                { src: "321/3/N.jpg", alt: "", modalId: "imageModal1N", type: "img" },
+                { src: "321/3/O.jpg", alt: "", modalId: "imageModal1O", type: "img" },
+                { src: "321/3/11201 國中技藝教育課程核銷案(1月份).pdf", title: "", type: "pdf" },
+                { src: "321/3/11201 國中技藝教育課程核銷案(9至12月份).pdf", title: "", type: "pdf" },
+                { src: "321/3/11201 教室日誌暨實習日誌 家政A班 培英.pdf", title: "", type: "pdf" },
+                { src: "321/3/11201 教室日誌暨實習日誌 電機B班 培英.pdf", title: "", type: "pdf" },
+                { src: "321/3/11202 國中技藝教育課程核銷案.pdf", title: "", type: "pdf" },
+                { src: "321/3/11202 教室日誌暨實習日誌 動機A班 培英.pdf", title: "", type: "pdf" },
+                { src: "321/3/11202 滿意度調查統計 動機A班 (培英).pdf", title: "", type: "pdf" },
+                { src: "321/3/余玉琪老師.pdf", title: "", type: "pdf" },
+                { src: "321/3/林定儀老師.pdf", title: "", type: "pdf" },
+                { src: "321/3/動力機械職群 汽車科 專業教室管理辦法.pdf", title: "", type: "pdf" },
+                { src: "321/3/陳志明老師.pdf", title: "", type: "pdf" },
+                { src: "321/3/陳薈茗老師.pdf", title: "", type: "pdf" },
+                { src: "321/3/葉玟君老師.pdf", title: "", type: "pdf" },
+            ];
+
+            const pdfContainer = document.getElementById('pdfCardsContainer');
+
+            pdfImageData.forEach(item => {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'col-md-4 mb-4';
+                const cardDiv = document.createElement('div');
+                cardDiv.className = 'card';
+
+                if (item.type === 'pdf') {
+                    const iframe = document.createElement('iframe');
+                    iframe.src = item.src;
+                    iframe.className = 'card-img-top';
+                    iframe.style.height = '380px';
+                    iframe.frameBorder = '0';
+                    cardDiv.appendChild(iframe);
+
+                    const cardBody = document.createElement('div');
+                    cardBody.className = 'card-body';
+                    const cardTitle = document.createElement('h5');
+                    cardTitle.className = 'card-title';
+                    cardTitle.textContent = item.title;
+                    cardBody.appendChild(cardTitle);
+                    cardDiv.appendChild(cardBody);
+                } else if (item.type === 'img') {
+                    const img = document.createElement('img');
+                    img.src = item.src;
+                    img.alt = item.alt;
+                    img.className = 'card-img-top';
+                    img.setAttribute('data-bs-toggle', 'modal');
+                    img.setAttribute('data-bs-target', `#${item.modalId}`);
+                    cardDiv.appendChild(img);
+                }
+
+                colDiv.appendChild(cardDiv);
+                pdfContainer.appendChild(colDiv);
+            });
+        }
+    </script>
+</body>
+</html>
