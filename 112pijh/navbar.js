@@ -2,7 +2,7 @@ function createNavBar() {
     const navBar = document.createElement('nav');
     navBar.className = 'navbar navbar-expand-lg sticky-top';
     navBar.style.background = 'linear-gradient(90deg, #c0e6a5, #82c6e2)'; // 使用漸層背景
-    navBar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.5)'; // 添加陰影
+    navBar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.7)'; // 添加陰影
 
     const containerDiv = document.createElement('div');
     containerDiv.className = 'container-fluid';
