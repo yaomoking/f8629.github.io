@@ -501,51 +501,55 @@ p {
         });
     
         function initializeContent() {
+            // Data for Section 1 (Images)
             const pdfImageData1 = [
-
-                { src: "231/A.jpg", alt: "", modalId: "imageModal1A", type: "img" },
-                { src: "231/B.jpg", alt: "", modalId: "imageModal1B", type: "img" },
-                { src: "231/C.jpg", alt: "", modalId: "imageModal1C", type: "img" },
-                { src: "231/D.jpg", alt: "", modalId: "imageModal1D", type: "img" },
-                { src: "231/E.jpg", alt: "", modalId: "imageModal1E", type: "img" },
-                { src: "231/F.jpg", alt: "", modalId: "imageModal1F", type: "img" },
-                { src: "231/G.jpg", alt: "", modalId: "imageModal1G", type: "img" },
-                { src: "231/H.jpg", alt: "", modalId: "imageModal1H", type: "img" },
-                { src: "231/I.jpg", alt: "", modalId: "imageModal1I", type: "img" },
-                { src: "231/J.jpg", alt: "", modalId: "imageModal1J", type: "img" },
-                { src: "231/K.jpg", alt: "", modalId: "imageModal1K", type: "img" },
-                { src: "231/L.jpg", alt: "", modalId: "imageModal1L", type: "img" },
-                { src: "231/M.jpg", alt: "", modalId: "imageModal1M", type: "img" },
-                { src: "231/N.jpg", alt: "", modalId: "imageModal1N", type: "img" },
-                { src: "231/O.jpg", alt: "", modalId: "imageModal1O", type: "img" },
-                { src: "231/P.jpg", alt: "", modalId: "imageModal1P", type: "img" },
-                { src: "231/Q.jpg", alt: "", modalId: "imageModal1Q", type: "img" },
-                { src: "231/R.jpg", alt: "", modalId: "imageModal1R", type: "img" },
+                { src: "231/A.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1A", type: "img" },
+                { src: "231/B.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1B", type: "img" },
+                { src: "231/C.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1C", type: "img" },
+                { src: "231/D.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1D", type: "img" },
+                { src: "231/E.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1E", type: "img" },
+                { src: "231/F.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1F", type: "img" },
+                { src: "231/G.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1G", type: "img" },
+                { src: "231/H.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1H", type: "img" },
+                { src: "231/I.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1I", type: "img" },
+                { src: "231/J.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1J", type: "img" },
+                { src: "231/K.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1K", type: "img" },
+                { src: "231/L.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1L", type: "img" },
+                { src: "231/M.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1M", type: "img" },
+                { src: "231/N.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1N", type: "img" },
+                { src: "231/O.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1O", type: "img" },
+                { src: "231/P.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1P", type: "img" },
+                { src: "231/Q.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1Q", type: "img" },
+                { src: "231/R.jpg", alt: "國中學生生涯檔案", modalId: "imageModal1R", type: "img" },
             ];
     
+            // Data for Section 2 (Images)
             const pdfImageData2 = [
-            { src: "232/A.jpg", alt: "", modalId: "imageModal2A", type: "img" },
-            { src: "232/B.jpg", alt: "", modalId: "imageModal2B", type: "img" },
-            { src: "232/C.jpg", alt: "", modalId: "imageModal2C", type: "img" }
-        ];
-
-        const pdfImageData3 = [
-                { src: "233/A.jpg", alt: "", modalId: "imageModal3A", type: "img" },
-                { src: "https://drive.google.com/file/d/14j1ftb_Gq7jy5KCHJM5p2WUVQxpdgbIb/preview", alt: "", modalId: "", type: "pdf" }
+                { src: "232/A.jpg", alt: "", modalId: "imageModal2A", type: "img" },
+                { src: "232/B.jpg", alt: "", modalId: "imageModal2B", type: "img" },
+                { src: "232/C.jpg", alt: "", modalId: "imageModal2C", type: "img" }
             ];
-
+    
+            // Data for Section 3 (Images and PDF)
+            const pdfImageData3 = [
+                { src: "233/A.jpg", alt: "", modalId: "imageModal3A", type: "img" },
+                { src: "https://drive.google.com/file/d/14j1ftb_Gq7jy5KCHJM5p2WUVQxpdgbIb/preview", alt: "113畢業生進路統計與應用群科對應統計表", modalId: "", type: "pdf" }
+            ];
+    
+            // Containers for each section
             const section1Container = document.querySelector('#section1 .row');
             const section2Container = document.querySelector('#section2 .row');
-            const section3Container = document.querySelector('#section3 .row'); // Section 3 的容器
-
-            // 创建卡片的函数
+            const section3Container = document.querySelector('#section3 .row');
+    
+            // Function to create cards for images and PDFs
             function createCards(dataArray, container) {
                 dataArray.forEach(item => {
                     const colDiv = document.createElement('div');
                     colDiv.className = 'col-md-4 mb-4'; // 3 items per row
+    
                     const cardDiv = document.createElement('div');
                     cardDiv.className = 'card h-100'; // Ensure equal height for cards
-
+    
                     if (item.type === "img") {
                         const img = document.createElement('img');
                         img.src = item.src;
@@ -558,11 +562,11 @@ p {
                         const iframe = document.createElement('iframe');
                         iframe.src = item.src;
                         iframe.className = 'card-img-top';
-                        iframe.style.height = '300px'; // Consistent height
+                        iframe.style.height = '300px'; // Consistent height for PDFs
                         iframe.frameBorder = '0';
                         cardDiv.appendChild(iframe);
                     }
-
+    
                     const cardBody = document.createElement('div');
                     cardBody.className = 'card-body';
                     const cardTitle = document.createElement('h5');
@@ -570,18 +574,19 @@ p {
                     cardTitle.textContent = item.alt;
                     cardBody.appendChild(cardTitle);
                     cardDiv.appendChild(cardBody);
-
+    
                     colDiv.appendChild(cardDiv);
                     container.appendChild(colDiv);
                 });
             }
-
+    
             // Generate cards for all sections
             createCards(pdfImageData1, section1Container);
             createCards(pdfImageData2, section2Container);
-            createCards(pdfImageData3, section3Container); // 为 section3 添加卡片
+            createCards(pdfImageData3, section3Container);
         }
-    </script>  
+    </script>
+      
     
 </body>
 
