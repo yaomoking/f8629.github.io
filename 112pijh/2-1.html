@@ -141,10 +141,10 @@
     <!-- Pagination -->
     <nav aria-label="Page navigation example" class="mb-4">
         <ul class="pagination justify-content-center">
-            <li class="page-item"><a class="page-link" href="#section1">生涯發展教育工作執行委員會</a></li>
-            <li class="page-item"><a class="page-link" href="#section2">技藝教育遴薦及輔導機制</a></li>
-            <li class="page-item"><a class="page-link" href="#section3">生涯發展教育相關研習</a></li>
-            <li class="page-item"><a class="page-link" href="#section4">資源運用</a></li>
+            <li class="page-item"><a class="page-link" href="#section1">1.生涯發展教育工作執行委員會</a></li>
+            <li class="page-item"><a class="page-link" href="#section2">2.技藝教育遴薦及輔導機制</a></li>
+            <li class="page-item"><a class="page-link" href="#section3">3.生涯發展教育相關研習</a></li>
+            <li class="page-item"><a class="page-link" href="#section4">4.資源運用</a></li>
         </ul>
     </nav>
 
@@ -565,98 +565,80 @@
     });
 
     function initializeContent() {
-        // Initialize Image and PDF Cards for Section 3
+        // 初始化 Section 1 的圖片卡片數據
         const images = [
-            { src: "211/1/1.jpg", alt: "Image A", modalId: "imageModalA" },
-            { src: "211/1/2.jpg", alt: "Image B", modalId: "imageModalB" },
-            { src: "211/1/3.jpg", alt: "Image C", modalId: "imageModalC" },
-            { src: "211/1/4.jpg", alt: "Image D", modalId: "imageModalD" },
-            { src: "211/1/5.jpg", alt: "Image E", modalId: "imageModalE" }
+            { src: "211/1/1.jpg", alt: "生涯發展教育工作執行委員會名單", modalId: "imageModalA", title: "生涯發展教育工作執行委員會名單" },
+            { src: "211/1/2.jpg", alt: "112-1期初生涯發展教育會議記錄", modalId: "imageModalB", title: "112-1期初生涯發展教育會議記錄" },
+            { src: "211/1/3.jpg", alt: "112學年度第一學期生涯發展教育會議簽到表", modalId: "imageModalC", title: "112學年度第一學期生涯發展教育會議簽到表" },
+            { src: "211/1/4.jpg", alt: "112-2期初生涯發展教育會議記錄", modalId: "imageModalD", title: "112-2期初生涯發展教育會議記錄" },
+            { src: "211/1/5.jpg", alt: "112學年度第二學期生涯發展教育會議簽到表", modalId: "imageModalE", title: "112學年度第二學期生涯發展教育會議簽到表" }
         ];
 
+        // 初始化 Section 2 的 PDF 和圖片數據
         const pdfImageData2 = [
-            { src: "211/2/1.jpg", alt: "Image A", modalId: "imageModal2A", type: "img" },
-            { src: "211/2/2.jpg", alt: "Image B", modalId: "imageModal2B", type: "img" },
-            { src: "211/2/3.jpg", alt: "Image C", modalId: "imageModal2C", type: "img" },
-            { src: "211/2/4.jpg", alt: "Image D", modalId: "imageModal2D", type: "img" },
-            { src: "211/2/5.jpg", alt: "Image E", modalId: "imageModal2E", type: "img" },
-            { src: "211/2/6.jpg", alt: "Image F", modalId: "imageModal2F", type: "img" },
-            { src: "211/2/7.jpg", alt: "Image G", modalId: "imageModal2G", type: "img" },
-            { src: "211/2/8.jpg", alt: "Image H", modalId: "imageModal2H", type: "img" },
-            { src: "211/2/9.jpg", alt: "Image I", modalId: "imageModal2I", type: "img" },
-            { src: "211/2/10.jpg", alt: "Image J", modalId: "imageModal2J", type: "img" },
-            { src: "211/2/11.jpg", alt: "Image K", modalId: "imageModal2K", type: "img" },
-            { src: "211/2/12.jpg", alt: "Image L", modalId: "imageModal2L", type: "img" },
-            { src: "211/2/13.jpg", alt: "Image M", modalId: "imageModal2M", type: "img" },
-            { src: "https://drive.google.com/file/d/1Oc2N533_gyQRd6n4gA2va8RQas_tJbz6/preview", title: "PDF 1", type: "pdf" },
-            { src: "https://drive.google.com/file/d/1k64E0TB_SyH3fRiSu7BCokxYw1QGpfK6/preview", title: "PDF 1", type: "pdf" },
+            { src: "211/2/1.jpg", alt: "112學年度生涯適性輔導與技藝教育課程遴輔會議記錄", modalId: "imageModal2A", type: "img", title: "112學年度生涯適性輔導與技藝教育課程遴輔會議記錄" },
+            { src: "211/2/2.jpg", alt: "112學年度第一學期過輔會組織", modalId: "imageModal2B", type: "img", title: "112學年度第一學期過輔會組織" },
+            { src: "211/2/3.jpg", alt: "112學年度第一學期過輔會組織照片", modalId: "imageModal2C", type: "img", title: "112學年度第一學期過輔會組織照片" },
+            { src: "211/2/4.jpg", alt: "112學年度生涯適性輔導與技藝教育課程遴輔會議", modalId: "imageModal2D", type: "img", title: "112學年度生涯適性輔導與技藝教育課程遴輔會議" },
+            { src: "211/2/5.jpg", alt: "112學年度第二學期遴輔會會議", modalId: "imageModal2E", type: "img", title: "112學年度第二學期遴輔會會議" },
+            { src: "211/2/6.jpg", alt: "112學年度第二學期遴輔會會議照片", modalId: "imageModal2F", type: "img", title: "112學年度第二學期遴輔會會議照片" },
+            { src: "211/2/7.jpg", alt: "技藝教育課程遴選輔導流程表", modalId: "imageModal2G", type: "img", title: "技藝教育課程遴選輔導流程表" },
+            { src: "211/2/8.jpg", alt: "112學年度參加技藝教育學程家長同意書", modalId: "imageModal2H", type: "img", title: "112學年度參加技藝教育學程家長同意書" },
+            { src: "211/2/9.jpg", alt: "112學年度參加技藝教育學程家長性向與志願選填分析表", modalId: "imageModal2I", type: "img", title: "112學年度參加技藝教育學程家長性向與志願選填分析表" },
+            { src: "https://drive.google.com/file/d/1Oc2N533_gyQRd6n4gA2va8RQas_tJbz6/preview", title: "藝教育課程班申辦計畫書合作", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1k64E0TB_SyH3fRiSu7BCokxYw1QGpfK6/preview", title: "藝教育課程班申辦計畫書自辦", type: "pdf" }
         ];
 
+        // 新增的 Section 3 的 PDF 和圖片數據
         const pdfImageData3 = [
-            { src: "211/3/1.jpg", alt: "Image A", modalId: "imageModal3A", type: "img" },
-            { src: "211/3/2.jpg", alt: "Image B", modalId: "imageModal3B", type: "img" },
-            { src: "211/3/3.jpg", alt: "Image C", modalId: "imageModal3C", type: "img" },
-            { src: "211/3/4.jpg", alt: "Image D", modalId: "imageModal3D", type: "img" },
-            { src: "211/3/5.jpg", alt: "Image E", modalId: "imageModal3E", type: "img" },
-            { src: "211/3/6.jpg", alt: "Image F", modalId: "imageModal3F", type: "img" },
-            { src: "https://drive.google.com/file/d/1dVk086gW7IMwYYf97It5A08wq8d1vNuj/preview", title: "PDF 1", type: "pdf" },
-            { src: "https://drive.google.com/file/d/1rLQmc_nIeJyiHbpgizoUfBo2J3NioUSq/preview", title: "PDF 2", type: "pdf" },
-            { src: "https://drive.google.com/file/d/1o4cGiteogcouIVFOQWfeA3yoSoHqCkhw/preview", title: "PDF 3", type: "pdf" },
-            { src: "https://drive.google.com/file/d/1K17XotGy-PKH_PHgewnieuvW1D6qHVjJ/preview", title: "PDF 4", type: "pdf" },
-            { src: "https://drive.google.com/file/d/1Re7Q0KJhrOuXg3PFdFL21JviKeRfOJmJ/preview", title: "PDF 5", type: "pdf" }
+            { src: "211/3/1.jpg", alt: "112-1親職教育講座9/16場次", modalId: "imageModal3A", type: "img", title: "112-1親職教育講座9/16場次" },
+            { src: "211/3/2.jpg", alt: "112-1親職教育講座11/4場次", modalId: "imageModal3B", type: "img", title: "112-1親職教育講座11/4場次" },
+            { src: "211/3/3.jpg", alt: "112-1親職教育講座11/4場次", modalId: "imageModal3C", type: "img", title: "112-1親職教育講座11/4場次" },
+            { src: "211/3/4.jpg", alt: "112-2親職教育講座3/8場次", modalId: "imageModal3D", type: "img", title: "112-2親職教育講座3/8場次" },
+            { src: "211/3/5.jpg", alt: "112-2親職教育講座3/8場次", modalId: "imageModal3E", type: "img", title: "112-2親職教育講座3/8場次" },
+            { src: "211/3/6.jpg", alt: "112-2親職教育講座3/8場次二", modalId: "imageModal3F", type: "img", title: "112-2親職教育講座3/8場次二" },
+            { src: "https://drive.google.com/file/d/1dVk086gW7IMwYYf97It5A08wq8d1vNuj/preview", title: "112-1學期議案教師增能研習會議", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1rLQmc_nIeJyiHbpgizoUfBo2J3NioUSq/preview", title: "112-2學期議案教師增能研習會議", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1o4cGiteogcouIVFOQWfeA3yoSoHqCkhw/preview", title: "國中生涯發展教育成果報告", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1K17XotGy-PKH_PHgewnieuvW1D6qHVjJ/preview", title: "國中生涯發展教育成果報告", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1Re7Q0KJhrOuXg3PFdFL21JviKeRfOJmJ/preview", title: "國中生涯發展教育成果報告", type: "pdf" }
         ];
 
-        const imageContainer = document.getElementById('imageCardsContainer');
-        const pdfContainer3 = document.getElementById('pdfCardsContainer');
-        const pdfContainer2 = document.getElementById('pdfCardsContainer2'); // 新增的容器，放置 pdfImageData2 的內容
+        const imageContainer = document.getElementById('imageCardsContainer');  // 容器放置 Section 1 的圖片
+        const pdfContainer2 = document.getElementById('pdfCardsContainer2');  // 容器放置 Section 2 的圖片和 PDF
+        const pdfContainer3 = document.getElementById('pdfCardsContainer');  // 容器放置 Section 3 的圖片和 PDF
 
+        // 生成 Section 1 圖片卡片並附帶標題
         images.forEach(image => {
             const colDiv = document.createElement('div');
             colDiv.className = 'col-md-4 mb-4';
             const cardDiv = document.createElement('div');
             cardDiv.className = 'card';
+
             const img = document.createElement('img');
             img.src = image.src;
             img.alt = image.alt;
             img.className = 'card-img-top';
             img.setAttribute('data-bs-toggle', 'modal');
             img.setAttribute('data-bs-target', `#${image.modalId}`);
+
+            const title = document.createElement('h5');
+            title.className = 'card-title text-center mt-2';
+            title.innerText = image.title;
+
             cardDiv.appendChild(img);
+            cardDiv.appendChild(title);
             colDiv.appendChild(cardDiv);
             imageContainer.appendChild(colDiv);
         });
 
-        pdfImageData3.forEach(item => {
-            const colDiv = document.createElement('div');
-            colDiv.className = 'col-md-4 mb-4';
-            const cardDiv = document.createElement('div');
-            cardDiv.className = 'card';
-            if (item.type === "img") {
-                const img = document.createElement('img');
-                img.src = item.src;
-                img.className = 'card-img-top';
-                img.alt = item.title;
-                img.setAttribute('data-bs-toggle', 'modal');
-                img.setAttribute('data-bs-target', `#${item.modalId}`);
-                cardDiv.appendChild(img);
-            } else if (item.type === "pdf") {
-                const iframe = document.createElement('iframe');
-                iframe.src = item.src;
-                iframe.className = 'card-img-top';
-                iframe.style.height = '380px';
-                iframe.frameBorder = '0';
-                cardDiv.appendChild(iframe);
-            }
-            colDiv.appendChild(cardDiv);
-            pdfContainer3.appendChild(colDiv);
-        });
-
-        // 新增 pdfImageData2 的初始化
+        // 生成 Section 2 PDF 和圖片卡片並附帶標題
         pdfImageData2.forEach(item => {
             const colDiv = document.createElement('div');
             colDiv.className = 'col-md-4 mb-4';
             const cardDiv = document.createElement('div');
             cardDiv.className = 'card';
+
             if (item.type === "img") {
                 const img = document.createElement('img');
                 img.src = item.src;
@@ -664,48 +646,110 @@
                 img.alt = item.alt;
                 img.setAttribute('data-bs-toggle', 'modal');
                 img.setAttribute('data-bs-target', `#${item.modalId}`);
+
+                const title = document.createElement('h5');
+                title.className = 'card-title text-center mt-2';
+                title.innerText = item.title;
+
                 cardDiv.appendChild(img);
+                cardDiv.appendChild(title);
             } else if (item.type === "pdf") {
                 const iframe = document.createElement('iframe');
                 iframe.src = item.src;
                 iframe.className = 'card-img-top';
                 iframe.style.height = '380px';
                 iframe.frameBorder = '0';
+
+                const title = document.createElement('h5');
+                title.className = 'card-title text-center mt-2';
+                title.innerText = item.title;
+
                 cardDiv.appendChild(iframe);
+                cardDiv.appendChild(title);
             }
             colDiv.appendChild(cardDiv);
             pdfContainer2.appendChild(colDiv);
         });
+
+        // 生成 Section 3 PDF 和圖片卡片並附帶標題
+        pdfImageData3.forEach(item => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-md-4 mb-4';
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+
+            if (item.type === "img") {
+                const img = document.createElement('img');
+                img.src = item.src;
+                img.className = 'card-img-top';
+                img.alt = item.alt;
+                img.setAttribute('data-bs-toggle', 'modal');
+                img.setAttribute('data-bs-target', `#${item.modalId}`);
+
+                const title = document.createElement('h5');
+                title.className = 'card-title text-center mt-2';
+                title.innerText = item.title;
+
+                cardDiv.appendChild(img);
+                cardDiv.appendChild(title);
+            } else if (item.type === "pdf") {
+                const iframe = document.createElement('iframe');
+                iframe.src = item.src;
+                iframe.className = 'card-img-top';
+                iframe.style.height = '380px';
+                iframe.frameBorder = '0';
+
+                const title = document.createElement('h5');
+                title.className = 'card-title text-center mt-2';
+                title.innerText = item.title;
+
+                cardDiv.appendChild(iframe);
+                cardDiv.appendChild(title);
+            }
+            colDiv.appendChild(cardDiv);
+            pdfContainer3.appendChild(colDiv);
+        });
     }
 
     function initializeResourceContent() {
-        // Initialize PDF Cards for Section 4
+        // 初始化 Section 4 的 PDF 資源卡片數據
         const pdfImageData4 = [
-            { src: "https://drive.google.com/file/d/13UVPidx7OVCH961ZVyCxCfz488f0axnl/preview", title: "PDF 1", type: "pdf" },
-            { src: "https://drive.google.com/file/d/1_DAOJZ2syD8SHNE5AMBo6Uw_FL0voF-m/preview", title: "PDF 2", type: "pdf" },
-            { src: "https://drive.google.com/file/d/1kBjZUouZG0wC7Imra6cDLTfkemxU1HV7/preview", title: "PDF 3", type: "pdf" },
-            { src: "https://drive.google.com/file/d/1bEahRif_7VaUVZ4gFN8C5NtvG83oyIl7/preview", title: "PDF 4", type: "pdf" },
-            { src: "https://drive.google.com/file/d/1LlKClWRy53b4iClYcaBE2SwnWA530fH2/preview", title: "PDF 5", type: "pdf" },
-            { src: "https://drive.google.com/file/d/1VzSXjvwHOqCUDNstNr4b3KDyfLmzgdkK/preview", title: "PDF 6", type: "pdf" }
+            { src: "https://drive.google.com/file/d/13UVPidx7OVCH961ZVyCxCfz488f0axnl/preview", title: "112學年度辦理生涯發展相關經費", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1_DAOJZ2syD8SHNE5AMBo6Uw_FL0voF-m/preview", title: "輔導室媒材目錄", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1kBjZUouZG0wC7Imra6cDLTfkemxU1HV7/preview", title: "輔導室圖書目錄", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1bEahRif_7VaUVZ4gFN8C5NtvG83oyIl7/preview", title: "輔導室光碟目錄", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1LlKClWRy53b4iClYcaBE2SwnWA530fH2/preview", title: "國中生涯發展教育成果報告", type: "pdf" },
+            { src: "https://drive.google.com/file/d/1VzSXjvwHOqCUDNstNr4b3KDyfLmzgdkK/preview", title: "國中生涯發展教育成果報告", type: "pdf" }
         ];
 
-        const resourceContainer = document.getElementById('resourceCardsContainer');
+        const resourceContainer = document.getElementById('resourceCardsContainer');  // 容器放置 Section 4 的 PDF
+
+        // 生成 PDF 資源卡片並附帶標題
         pdfImageData4.forEach(item => {
             const colDiv = document.createElement('div');
             colDiv.className = 'col-md-4 mb-4';
             const cardDiv = document.createElement('div');
             cardDiv.className = 'card';
+
             const iframe = document.createElement('iframe');
             iframe.src = item.src;
             iframe.className = 'card-img-top';
             iframe.style.height = '380px';
             iframe.frameBorder = '0';
+
+            const title = document.createElement('h5');
+            title.className = 'card-title text-center mt-2';
+            title.innerText = item.title;
+
             cardDiv.appendChild(iframe);
+            cardDiv.appendChild(title);
             colDiv.appendChild(cardDiv);
             resourceContainer.appendChild(colDiv);
         });
     }
 </script>
+
+
 
 
 </body>
