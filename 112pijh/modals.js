@@ -21,22 +21,22 @@ function createModals() {
                             <tr>
                                 <td>國中一年級（七年級）</td>
                                 <td>27</td>
-                                <td>801</td>
+                                <td>793</td>
                             </tr>
                             <tr>
                                 <td>國中二年級（八年級）</td>
                                 <td>27</td>
-                                <td>779</td>
+                                <td>785</td>
                             </tr>
                             <tr>
                                 <td>國中三年級（九年級）</td>
                                 <td>27</td>
-                                <td>803</td>
+                                <td>795</td>
                             </tr>
                             <tr>
                                 <td>合計</td>
                                 <td>81</td>
-                                <td>2383</td>
+                                <td>2373</td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -74,19 +74,19 @@ function createModals() {
                         <tbody>
                             <tr>
                                 <td>員額編制</td>
-                                <td>195</td>
+                                <td>197</td>
                             </tr>
                             <tr>
                                 <td>編制內正式教師</td>
-                                <td>174</td>
+                                <td>164</td>
                             </tr>
                             <tr>
                                 <td>代理教師</td>
-                                <td>29</td>
+                                <td>33</td>
                             </tr>
                             <tr>
                                 <td rowspan="2">任教輔導活動科教師人數</td>
-                                <td>5</td>
+                                <td>6</td>
                             </tr>
                             <tr>
                                 <td>具輔導活動科合格教師證人數</td>
@@ -94,7 +94,7 @@ function createModals() {
                             </tr>
                             <tr>
                                 <td>不具輔導活動科合格教師證人數</td>
-                                <td>0</td>
+                                <td>1</td>
                             </tr>
                         </tbody>
                     </table>
@@ -128,12 +128,12 @@ function createModals() {
                             <tr>
                                 <td>縣市政府補助（含教育部）</td>
                                 <td>344,000</td>
-                                <td>60,000</td>
+                                <td>120,000</td>
                                 <td>0</td>
                             </tr>
                             <tr>
                                 <td>學校預算</td>
-                                <td>135,548</td>
+                                <td>128,486</td>
                                 <td>0</td>
                                 <td>0</td>
                             </tr>
@@ -145,8 +145,8 @@ function createModals() {
                             </tr>
                             <tr>
                                 <td>合計</td>
-                                <td>767,132</td>
-                                <td>60,000</td>
+                                <td>741,370</td>
+                                <td>120,000</td>
                                 <td>0</td>
                             </tr>
                         </tbody>

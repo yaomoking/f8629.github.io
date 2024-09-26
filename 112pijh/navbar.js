@@ -63,16 +63,16 @@ function createNavBar() {
 
     const menuItems = [
         {
-            name: '學校基本資料',
+            name: '表A.學校基本資料',
             submenu: [
                 { name: '全校班級數', modalId: 'classModal' },
                 { name: '教師人數', modalId: 'teacherModal' },
                 { name: '辦理相關經費', modalId: 'fundingModal' },
-                { name: '技藝教育抽離式課程', modalId: 'skillCourseModal' }
+                { name: '技藝教育抽離式課程', link: '1-4.html' }
             ]
         },
         {
-            name: '生涯發展教育',
+            name: '表B.生涯發展教育',
             submenu: [
                 { name: '行政措施與組織運作', link: '2-1.html' },
                 { name: '課程規劃與教學活動', link: '2-2.html' },
@@ -81,7 +81,7 @@ function createNavBar() {
             ]
         },
         {
-            name: '技藝教育抽離式課程',
+            name: '表C.技藝教育抽離式課程',
             submenu: [
                 { name: '行政與輔導', link: '3-1.html' },
                 { name: '課程與教學', link: '3-2.html' },
